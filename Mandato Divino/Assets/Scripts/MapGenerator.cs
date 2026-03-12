@@ -8,10 +8,12 @@ public class MapGenerator : MonoBehaviour
     float [,] map; //Almacena los valores del algoritmo
     public int SizeXY; //Determina el tamaño total del mapa, asumiendo que es un cuadrado dde dimensiones X^2
     public Tilemap tilemap; //Referencia al tilemap del grid
-    public Tile[] tiles; //Almacena los distintos tipos de tiles
+    public PrefabTile[] tiles; //Almacena los distintos tipos de tiles
     public float[] levels; //Se usa para determinar los tiles asociados a cada valor del algoritmo
     public int InValues; //Valores iniciales para las esquinas del mapa
     int border = 10; //Numero de casillas alrdedor del mapa que siempre serán de agua
+
+    public ResourceGenerator RG; // Invoca la función de generación de recursos
 
     private void Start()
     {
@@ -21,9 +23,10 @@ public class MapGenerator : MonoBehaviour
         map[0, SizeXY - 1] = InValues;
         map[SizeXY - 1, 0] = InValues;
         GenMap();
+        RG.AssignResources();
     }
 
-    void GenMap()
+    void GenMap() //La función que genera el mappa en base al algoritmo
     {
         float maxValue = 0;
         DiamondSquareAlgorithm(SizeXY);
@@ -39,7 +42,7 @@ public class MapGenerator : MonoBehaviour
             }
         }
 
-        for (int y = 0; y < SizeXY; y++)
+        for (int y = 0; y < SizeXY; y++) //Metodo empleado para que el mapa cuente con un borde de casillas de agua y que la distribución sea másvariada pero lógica
         {
             for (int x = 0; x < SizeXY; x++)
             {
@@ -61,12 +64,16 @@ public class MapGenerator : MonoBehaviour
                 }
 
                 v = Mathf.Clamp01(v);
-                tilemap.SetTile(new Vector3Int(x,y,0), SelectTile(v));
+                PrefabTile tile = SelectTile(v);
+                Vector3Int pos = new Vector3Int(x, y, 0);
+                tilemap.SetTile(pos, tile);
+
+                //Añadi aquí sistema de generación de prefabs en tiles 
             }
         }
     }
 
-    float SmoothValue(int x, int y)
+    float SmoothValue(int x, int y) //Esta función suaviza los valores que se asignan a las casillas para que esta sea más variad pero lógica
     {
         float total = 0f;
         int count = 0;
@@ -89,7 +96,7 @@ public class MapGenerator : MonoBehaviour
         return total/count;
     }
 
-    Tile SelectTile(float p)
+    PrefabTile SelectTile(float p) //Se usa para asignar un tile a cada casilla del mapa
     {
         for (int i = 0; i < levels.Length; i++)
         {
