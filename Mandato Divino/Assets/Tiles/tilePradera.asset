@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74ae43b38b605ef4886e4aad309e3e56, type: 3}
   m_Name: tilePradera
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -491181758, guid: 79e89088aa5ef6648b9c636a0bc53e05, type: 3}
+  m_Sprite: {fileID: -1825908845, guid: bc5162b061afe824b91eb763075fe482, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
