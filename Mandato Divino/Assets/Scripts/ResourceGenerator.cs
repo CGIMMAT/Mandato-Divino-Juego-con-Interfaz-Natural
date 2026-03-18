@@ -23,10 +23,10 @@ public class ResourceGenerator : MonoBehaviour
 
     //En este caso npc son las siglas de "No Prefab Chance"
     public float npcWater = 1.0f; //Probabilidad de que no aparezcan recursos en agua
-    public float npcSand = 0.98f; // Probabilidad de que no aparezcan recursos en arena
-    public float npcPlain = 0.95f; // Probabilidad de que no aparezcan recursos en pradera
-    public float npcForest = 0.9f; // Probabilidad de que no aparezcan recursos en vegetación
-    public float npcMountain = 0.8f; // Probabilidad de que no aparezcan recursos en montaña
+    public float npcSand = 0.95f; // Probabilidad de que no aparezcan recursos en arena
+    public float npcPlain = 0.85f; // Probabilidad de que no aparezcan recursos en pradera
+    public float npcForest = 0.6f; // Probabilidad de que no aparezcan recursos en vegetación
+    public float npcMountain = 0.7f; // Probabilidad de que no aparezcan recursos en montaña
 
     private Dictionary<Vector3Int, GameObject> spawnedResources = new Dictionary<Vector3Int, GameObject>(); //Se usa para almacenar las casillas en específico donde hay un recurso permanente
 
@@ -38,10 +38,10 @@ public class ResourceGenerator : MonoBehaviour
     public PrefabsChance[] temporaryMountain; //Recursos temporales en montaña
 
     public float npcTemporaryWater = 1f; //Probabilidad de que no aparezcan recursos temporales en agua
-    public float npcTemporarySand = 0.99f; //Probabilidad de que no aparezcan recursos temporales en arena
-    public float npcTemporaryPlain = 0.97f; //Probabilidad de que no aparezcan recursos temporales en pradera
-    public float npcTemporaryForest = 0.95f; //Probabilidad de que no aparezcan recursos temporales en vegetación
-    public float npcTemporaryMountain = 0.98f; //Probabilidad de que no aparezcan recursos temporales en montaña
+    public float npcTemporarySand = 0.95f; //Probabilidad de que no aparezcan recursos temporales en arena
+    public float npcTemporaryPlain = 0.8f; //Probabilidad de que no aparezcan recursos temporales en pradera
+    public float npcTemporaryForest = 0.7f; //Probabilidad de que no aparezcan recursos temporales en vegetación
+    public float npcTemporaryMountain = 0.8f; //Probabilidad de que no aparezcan recursos temporales en montaña
 
     //Ahora invocamos los tiempos que se usaran para etablecer un intervalo de genración y destrucción de recursos temporales
     public float spwanMin = 3f;
