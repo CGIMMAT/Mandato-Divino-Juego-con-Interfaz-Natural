@@ -375,6 +375,34 @@ MonoBehaviour:
   npcPlain: 0.95
   npcForest: 0.9
   npcMountain: 0.8
+  temporaryWater: []
+  temporarySand:
+  - prefabs: {fileID: 3315287430071711834, guid: 902d15a073760f948b82fdfe4447a8c0, type: 3}
+    chance: 1
+  temporaryPlain:
+  - prefabs: {fileID: 3315287430071711834, guid: 902d15a073760f948b82fdfe4447a8c0, type: 3}
+    chance: 0.4
+  - prefabs: {fileID: 1698939852762776543, guid: 3db9a342a37314a4a9ee79462bc6a0e2, type: 3}
+    chance: 0.6
+  temporaryForest:
+  - prefabs: {fileID: 3315287430071711834, guid: 902d15a073760f948b82fdfe4447a8c0, type: 3}
+    chance: 0.5
+  - prefabs: {fileID: 1698939852762776543, guid: 3db9a342a37314a4a9ee79462bc6a0e2, type: 3}
+    chance: 0.5
+  temporaryMountain:
+  - prefabs: {fileID: 3315287430071711834, guid: 902d15a073760f948b82fdfe4447a8c0, type: 3}
+    chance: 0.7
+  - prefabs: {fileID: 3315287430071711834, guid: 902d15a073760f948b82fdfe4447a8c0, type: 3}
+    chance: 0.3
+  npcTemporaryWater: 1
+  npcTemporarySand: 0.5
+  npcTemporaryPlain: 0.5
+  npcTemporaryForest: 0.5
+  npcTemporaryMountain: 0.5
+  spwanMin: 3
+  spawnMax: 10
+  destroyMin: 20
+  destroyMax: 50
 --- !u!1 &923106779
 GameObject:
   m_ObjectHideFlags: 0

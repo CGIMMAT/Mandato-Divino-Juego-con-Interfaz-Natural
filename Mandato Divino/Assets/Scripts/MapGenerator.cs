@@ -23,7 +23,7 @@ public class MapGenerator : MonoBehaviour
         map[0, SizeXY - 1] = InValues;
         map[SizeXY - 1, 0] = InValues;
         GenMap();
-        RG.AssignResources();
+        RG.Initialize();
     }
 
     void GenMap() //La función que genera el mappa en base al algoritmo
