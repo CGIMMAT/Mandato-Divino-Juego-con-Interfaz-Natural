@@ -14,6 +14,7 @@ public class MapGenerator : MonoBehaviour
     int border = 10; //Numero de casillas alrdedor del mapa que siempre serán de agua
 
     public ResourceGenerator RG; // Invoca la función de generación de recursos
+    public DragCamera DC; //Invoca la función para inicializar correctamente la camara
 
     private void Start()
     {
@@ -24,6 +25,7 @@ public class MapGenerator : MonoBehaviour
         map[SizeXY - 1, 0] = InValues;
         GenMap();
         RG.Initialize();
+        DC.StartCamera();
     }
 
     void GenMap() //La función que genera el mappa en base al algoritmo
