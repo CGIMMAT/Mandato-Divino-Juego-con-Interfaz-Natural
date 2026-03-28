@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bc5f9d5dff9926408b9b66f03ba0199, type: 3}
+  m_Name: steelSpear
+  m_EditorClassIdentifier: 
+  itemName: Lanza de Metal
+  productionCost:
+  - material: 2
+    amount: 15
+  - material: 4
+    amount: 5
+  productionTime: 3
+  durability: 90
+  attackType: Pierce
+  damage: 6
+  attackRange: 2
+  attackSpeed: 2

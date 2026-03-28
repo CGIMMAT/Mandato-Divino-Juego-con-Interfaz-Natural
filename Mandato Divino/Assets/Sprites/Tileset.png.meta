@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bc5162b061afe824b91eb763075fe482
+guid: e174f89f73c3b034fb2c3a3b366de3ee
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tileWater
+      name: waterTile
       rect:
         serializedVersion: 2
         x: 0
@@ -111,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae065c816931f0242ab2490f485c4c96
-      internalID: 1451664906
+      spriteID: 8ebe11539ebdc6249bd9297bfe6a8e73
+      internalID: 773100651
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileSand
+      name: sandTile
       rect:
         serializedVersion: 2
         x: 150
@@ -132,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6629d0d7296f81d4ab7aac78d1ce10a8
-      internalID: -972110429
+      spriteID: a6da7faca7c520745a54ed25a0ea5e02
+      internalID: 329613427
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilePlain
+      name: plainTile
       rect:
         serializedVersion: 2
         x: 300
@@ -153,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69526e0b62f20c546b13f4a35847ca68
-      internalID: -1825908845
+      spriteID: 55564df96b2d165458a9b53895d9e5d0
+      internalID: -1234426241
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileForest
+      name: grassTile
       rect:
         serializedVersion: 2
         x: 450
@@ -174,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d44d38f903c8c29409004df515a51a9f
-      internalID: -1940790720
+      spriteID: fc734ce476357594f80aca670e3d235c
+      internalID: -1031686721
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileMountain
+      name: mountainTile
       rect:
         serializedVersion: 2
         x: 600
@@ -195,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 645f73edb69b6404dab26dcd376cb67b
-      internalID: 38847343
+      spriteID: 82c5ad6be5ed1c244adb8112eceb5f29
+      internalID: -39798404
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lake
+      name: lake
       rect:
         serializedVersion: 2
         x: 750
@@ -216,14 +216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca3407d48dce3644185f2ab428a96f34
-      internalID: -595865965
+      spriteID: 07298bec7f020c74b9eb970c0b983e85
+      internalID: -478730192
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest
+      name: forest
       rect:
         serializedVersion: 2
         x: 900
@@ -237,14 +237,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db23215170299a4428908bfe6bac3e30
-      internalID: 1384494722
+      spriteID: 06c9b271bad864e4296846fede9c4dd3
+      internalID: 705625172
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Burrow
+      name: burrow
       rect:
         serializedVersion: 2
         x: 1050
@@ -258,14 +258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3d9ac0e9ed95e04fac2c7c37bb0fe69
-      internalID: -1907145717
+      spriteID: 2ee8c887453eff5429f506a778091e11
+      internalID: -219658125
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rocks
+      name: rocks
       rect:
         serializedVersion: 2
         x: 0
@@ -279,14 +279,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: acdb6761b7e1c0b4b976f37f2249b81c
-      internalID: 1690621124
+      spriteID: efe33576322967343a58fd64dafe4985
+      internalID: -1207412713
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mineral
+      name: ore
       rect:
         serializedVersion: 2
         x: 150
@@ -300,14 +300,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af840bbd74d3e184a8fba6d42d4c225b
-      internalID: 631597165
+      spriteID: be5c78e6e35dddb4cb8277f90eaf809b
+      internalID: 2090530509
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bush
+      name: bush
       rect:
         serializedVersion: 2
         x: 300
@@ -321,14 +321,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b71013fc05bfbf45bb36ec223dab448
-      internalID: -1698677865
+      spriteID: 0f0efc13e74f7e846b94188b472bbc5d
+      internalID: 877048372
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Animal
+      name: animal
       rect:
         serializedVersion: 2
         x: 450
@@ -342,14 +342,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e62917b5bd214e5489784997b94e6b5b
-      internalID: -24499418
+      spriteID: 1fc9dfa44150466459ecae9b57cc682c
+      internalID: 45696757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: House
+      name: house
       rect:
         serializedVersion: 2
         x: 600
@@ -363,14 +363,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 852ee5f55ea532f4bba8c1712fa63979
-      internalID: -1497468120
+      spriteID: d7e6cf356fdb83444827e354aaeb3286
+      internalID: 1664788753
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FoodStorage
+      name: foodStorage
       rect:
         serializedVersion: 2
         x: 750
@@ -384,14 +384,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e001957368ae7be4c9470b7da2a08e0b
-      internalID: 1016109270
+      spriteID: dc603c3a6a7b8544eaeb0e2407770d4c
+      internalID: -963548487
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kitchen
+      name: kitchen
       rect:
         serializedVersion: 2
         x: 900
@@ -405,14 +405,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f2fd211d6deca24ba1b97800695830e
-      internalID: 1134776742
+      spriteID: 02bc9d218da2c5e4b9f9bc29cc8ad724
+      internalID: 1617631979
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Altar
+      name: altar
       rect:
         serializedVersion: 2
         x: 1050
@@ -426,14 +426,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19188afe99ec3f046a568cd2f0d40470
-      internalID: -1354966107
+      spriteID: 3bc496469d86ffa42b2cd58d3702842d
+      internalID: 1508473863
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlantationPlowed
+      name: plantationPlowed
       rect:
         serializedVersion: 2
         x: 0
@@ -447,14 +447,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8525d3b920c9f4a4da86aa60f0cb4205
-      internalID: 656411036
+      spriteID: 02d3147f3fc40dc458147ba3c3d91cb7
+      internalID: -559018570
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlantationBase
+      name: plantationBase
       rect:
         serializedVersion: 2
         x: 150
@@ -468,14 +468,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 509041bbc5d393440a44df2d7c54de30
-      internalID: -581844670
+      spriteID: d4746a284f11aca40ac3cba61ad33e99
+      internalID: -814152924
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlantationLittlePotato
+      name: plantationGP
       rect:
         serializedVersion: 2
         x: 300
@@ -489,17 +489,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3504ea41212d58441ad10f11099bf134
-      internalID: -1695711536
+      spriteID: b8ab5d9e6d577cb4aa7e1c3d918d8762
+      internalID: 1187746938
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlantationGrownPotato
+      name: plantationFP
       rect:
         serializedVersion: 2
-        x: 446
+        x: 450
         y: 750
         width: 150
         height: 150
@@ -510,14 +510,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f42db9cb05ab444197c5ddc42d25a09
-      internalID: -30118610
+      spriteID: 68f4a9d3da2cc064c964e099e3a8fa1c
+      internalID: -1746532639
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlantationLittleApple
+      name: plantationAG
       rect:
         serializedVersion: 2
         x: 600
@@ -531,14 +531,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b19854b9c30b25d46a0237952865cf0c
-      internalID: 1954922799
+      spriteID: fc02112375b983d4fae602cfa0702911
+      internalID: -1085703835
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlantationGrownApple
+      name: plantationAF
       rect:
         serializedVersion: 2
         x: 750
@@ -552,14 +552,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10cd1c2fe2e9ace49af191b11045e6ec
-      internalID: 362451607
+      spriteID: 8894cd20d30120c49b8b075dcc80fd26
+      internalID: -209201148
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlantationLittlePine
+      name: plantationTG
       rect:
         serializedVersion: 2
         x: 900
@@ -573,14 +573,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6e16c4e766838240a6caed2be6261d9
-      internalID: -646792430
+      spriteID: 14627ac8c13f04b4691d9729c70c3992
+      internalID: -1263749133
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlantationGrownPine
+      name: plantationTF
       rect:
         serializedVersion: 2
         x: 1050
@@ -594,14 +594,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 620b3adfdba60ea4d81565ebac5761bf
-      internalID: 2046575416
+      spriteID: aa9b1733bf8c94e44a36d77329f2aeb2
+      internalID: 2053750079
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Farm
+      name: farm
       rect:
         serializedVersion: 2
         x: 0
@@ -615,14 +615,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0192c8f99960d304b88efb2491dfe38d
-      internalID: -1067043905
+      spriteID: c6eb3f0e617f50448b0eadd5016baf95
+      internalID: 34235906
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FarmAnimals
+      name: farmAnimals
       rect:
         serializedVersion: 2
         x: 150
@@ -636,14 +636,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 532ee18c1d8d77341ada0761051cd536
-      internalID: -462506979
+      spriteID: 0ea32eff4028a0e41a8307fd9df61562
+      internalID: -1085806232
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sawmill
+      name: sawmill
       rect:
         serializedVersion: 2
         x: 300
@@ -657,14 +657,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5672aa81e517ce84ba36a4a9b92f9199
-      internalID: 1359385187
+      spriteID: 255b3942ffabc1244aace37c8cdc823a
+      internalID: 705856569
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WoodStorage
+      name: woodStorage
       rect:
         serializedVersion: 2
         x: 450
@@ -678,14 +678,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b6e75e3efe43a441b51e77634a493f8
-      internalID: -942199977
+      spriteID: 6511f0ceb1f3afa4ebfa45c2dc8f626e
+      internalID: -1929359362
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SeedStorage
+      name: seedStorage
       rect:
         serializedVersion: 2
         x: 600
@@ -699,14 +699,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73ed32fff3c7af244979f99bb3a5050f
-      internalID: 1327761547
+      spriteID: 1a880b514f26de04784901a45aea58e1
+      internalID: 716342335
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StoneStorage
+      name: stoneStorage
       rect:
         serializedVersion: 2
         x: 750
@@ -720,14 +720,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5563c2533b38b141a8fb1a277638162
-      internalID: 575361639
+      spriteID: 0c0ef9c155cd24b4093b6bf49c2da126
+      internalID: -1077279292
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mine
+      name: mine
       rect:
         serializedVersion: 2
         x: 900
@@ -741,14 +741,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f76988696654ba949983cf1e9281512a
-      internalID: 1788247233
+      spriteID: 3a9b70f9258d3634ab153de1311562a1
+      internalID: -709799108
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Quarry
+      name: quarry
       rect:
         serializedVersion: 2
         x: 1050
@@ -762,14 +762,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a65942af34c09fe48801d9f85c5e242e
-      internalID: -404520412
+      spriteID: 9144f9060b593284180e01b1cee98764
+      internalID: -1314901284
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WaterStorage
+      name: reservoir
       rect:
         serializedVersion: 2
         x: 0
@@ -783,14 +783,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb81e8d02057de542ae3264928937f01
-      internalID: 33142790
+      spriteID: 6a1e55af1aa3aa343aa153afbc0d0fe2
+      internalID: -1527718933
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Smith
+      name: blacksmith
       rect:
         serializedVersion: 2
         x: 150
@@ -804,14 +804,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cdb2bb091f48cc546be62846690d060b
-      internalID: -958021675
+      spriteID: eb0d51ae34ff51342adea9f307c83a42
+      internalID: 1521791063
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WeaponStorage
+      name: weaponStorage
       rect:
         serializedVersion: 2
         x: 300
@@ -825,14 +825,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e4a3731ca41aa0479516cd753cea242
-      internalID: -1801611079
+      spriteID: 913b5b1907e9d444a9aec30fb41aa7f2
+      internalID: -827305244
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ToolStorage
+      name: toolStorage
       rect:
         serializedVersion: 2
         x: 450
@@ -846,14 +846,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53ff1bd95f8d079439262e9483ddc79f
-      internalID: -1061438333
+      spriteID: e083f7f37e20fd643a58a5443562771b
+      internalID: 137914229
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DuctSR
+      name: ductSR
       rect:
         serializedVersion: 2
         x: 600
@@ -867,14 +867,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0aa763c2a16e234890232a7c3afafb2
-      internalID: -1013454953
+      spriteID: 78d9c95d5ddf86f458b08365525c30c4
+      internalID: 1316018
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DuctHS
+      name: ductHS
       rect:
         serializedVersion: 2
         x: 750
@@ -888,14 +888,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9e061aa5c0ac174180f7730451407cc
-      internalID: 339217658
+      spriteID: 7c906cf6d7d4b834e8a15df3ea8332ba
+      internalID: -552070386
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DuctCUR
+      name: ductCDR
       rect:
         serializedVersion: 2
         x: 900
@@ -909,14 +909,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 794a754573c5833479d7b44a6e8cdd69
-      internalID: -2036124199
+      spriteID: b0945eab3d9d3824ba459929701da641
+      internalID: 392662108
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DuctCUL
+      name: ductCD
       rect:
         serializedVersion: 2
         x: 1050
@@ -930,14 +930,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3df7103ccbe30724192c635259f8cbbb
-      internalID: -1057788909
+      spriteID: 765c7a39621e0b445bd68b8a9646bfbe
+      internalID: 465264949
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DuctCDR
+      name: ductCUR
       rect:
         serializedVersion: 2
         x: 0
@@ -951,14 +951,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7c65949619216948857131ee8021854
-      internalID: -1076856798
+      spriteID: 4f35fe816d16c404f9a14aa3c18cedcf
+      internalID: 2030159117
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DuctCDL
+      name: ductCUL
       rect:
         serializedVersion: 2
         x: 150
@@ -972,14 +972,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b5b9bd5272a25741bd45da3b5869137
-      internalID: -1633452808
+      spriteID: c5ac9d805175d754db0c32defc443183
+      internalID: 2137139639
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DuctVS
+      name: ductVS
       rect:
         serializedVersion: 2
         x: 300
@@ -993,14 +993,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1f89ddba38400d448cf52a8fca4dde9
-      internalID: 75236398
+      spriteID: 5d6b83c2f9b2f4147ab4dc00832c56ee
+      internalID: 183922469
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DuctSL
+      name: ductSL
       rect:
         serializedVersion: 2
         x: 450
@@ -1014,14 +1014,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb9ed7ef908f41c4789207fd8f5647d1
-      internalID: -1271123491
+      spriteID: 0f0db86567626074e9c2b79dd9a37491
+      internalID: 1462739021
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DuctSD
+      name: ductSD
       rect:
         serializedVersion: 2
         x: 600
@@ -1035,14 +1035,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c10649f3cc91ea4a8c19f830c6eb97c
-      internalID: 309766224
+      spriteID: d7578a2419d6c7d499200d941519e3a8
+      internalID: -1359111508
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DuctSU
+      name: ductSU
       rect:
         serializedVersion: 2
         x: 750
@@ -1056,14 +1056,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f74077419a0c2ac4cb68c1bccce087a7
-      internalID: -1403689318
+      spriteID: cd4bf78bba5002b47ac9fd005d013ed7
+      internalID: 1775207193
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DuctEL
+      name: ductEL
       rect:
         serializedVersion: 2
         x: 900
@@ -1077,14 +1077,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ba19d0b53e51124c900c3dbd808aea6
-      internalID: -40385926
+      spriteID: a5efb1f9b6ee1a34699fa6bd00227354
+      internalID: -2046413929
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DuctER
+      name: ductER
       rect:
         serializedVersion: 2
         x: 1050
@@ -1098,14 +1098,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e939b3a15399ea449bec75c6f8c3617e
-      internalID: -186777767
+      spriteID: 4a4af73dd4cace54d92f2604446f0ae5
+      internalID: -571172804
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DuctEU
+      name: ductEU
       rect:
         serializedVersion: 2
         x: 0
@@ -1119,14 +1119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5348472d7ae657e4b8041d7ad635a1cf
-      internalID: -1781365764
+      spriteID: f6947affbb6e93e4da56a51a93b6b1ed
+      internalID: 1557236904
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DuctED
+      name: ductED
       rect:
         serializedVersion: 2
         x: 150
@@ -1140,14 +1140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6dd0c654e1a84564b809d9496643525c
-      internalID: 1609642793
+      spriteID: 950d8b1b11eb7cd4d8d42b24d556127d
+      internalID: -541483224
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Well
+      name: well
       rect:
         serializedVersion: 2
         x: 300
@@ -1161,14 +1161,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 011eac94effa6b84b97378a90aa29e1d
-      internalID: -1982748343
+      spriteID: acf3e6dcb5329e34ab24084c39295b14
+      internalID: 328802656
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_51
+      name: buildingConstruction
       rect:
         serializedVersion: 2
         x: 450
@@ -1182,14 +1182,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82e1a2cb3dc526c4abef7a6bae2f62dc
-      internalID: 2807947
+      spriteID: d57b9492b396baa46a1e911a2039b894
+      internalID: -2015556466
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_52
+      name: buildingDestroyed
       rect:
         serializedVersion: 2
         x: 600
@@ -1203,14 +1203,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f977a99f93aa974b91dbc59f550c8b1
-      internalID: -498463839
+      spriteID: 5fde5df029391614fb9487bce32522e8
+      internalID: -1985106458
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_53
+      name: steelStorage
       rect:
         serializedVersion: 2
         x: 750
@@ -1224,8 +1224,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac7650e52cd67b0439ce8591e3b70d0d
-      internalID: -1791351991
+      spriteID: 9e9629c16e6093a408987cfed1ed852c
+      internalID: 6613430
       vertices: []
       indices: 
       edges: []
@@ -1245,8 +1245,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: caab0353b8f882b4781225d671379ed3
-      internalID: 1566053963
+      spriteID: 501cddb9302a8494dbe3506aa88fd8a7
+      internalID: -1659577551
       vertices: []
       indices: 
       edges: []
@@ -1266,8 +1266,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aab7e21bd49bc1c48aba30d07752113c
-      internalID: -1752784264
+      spriteID: 72cab3e9e0bcc8944b3a44e1cf0f5b77
+      internalID: -532372355
       vertices: []
       indices: 
       edges: []
@@ -1287,8 +1287,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03d0e92aadcecae43a227014521e501f
-      internalID: -224216920
+      spriteID: b697fd7644141934ba3968b3b9518d3d
+      internalID: 696667695
       vertices: []
       indices: 
       edges: []
@@ -1308,8 +1308,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b790b39d42e795428463998e1987df4
-      internalID: -1698466225
+      spriteID: 44d01471594d2da4c83e22557cbad4b4
+      internalID: -1993269078
       vertices: []
       indices: 
       edges: []
@@ -1325,64 +1325,64 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Altar: -1354966107
-      Animal: -24499418
-      Burrow: -1907145717
-      Bush: -1698677865
-      DuctCDL: -1633452808
-      DuctCDR: -1076856798
-      DuctCUL: -1057788909
-      DuctCUR: -2036124199
-      DuctED: 1609642793
-      DuctEL: -40385926
-      DuctER: -186777767
-      DuctEU: -1781365764
-      DuctHS: 339217658
-      DuctSD: 309766224
-      DuctSL: -1271123491
-      DuctSR: -1013454953
-      DuctSU: -1403689318
-      DuctVS: 75236398
-      Farm: -1067043905
-      FarmAnimals: -462506979
-      FoodStorage: 1016109270
-      Forest: 1384494722
-      House: -1497468120
-      Kitchen: 1134776742
-      Lake: -595865965
-      Mine: 1788247233
-      Mineral: 631597165
-      PlantationBase: -581844670
-      PlantationGrownApple: 362451607
-      PlantationGrownPine: 2046575416
-      PlantationGrownPotato: -30118610
-      PlantationLittleApple: 1954922799
-      PlantationLittlePine: -646792430
-      PlantationLittlePotato: -1695711536
-      PlantationPlowed: 656411036
-      Quarry: -404520412
-      Rocks: 1690621124
-      Sawmill: 1359385187
-      SeedStorage: 1327761547
-      Smith: -958021675
-      StoneStorage: 575361639
-      Tileset_51: 2807947
-      Tileset_52: -498463839
-      Tileset_53: -1791351991
-      Tileset_54: 1566053963
-      Tileset_55: -1752784264
-      Tileset_56: -224216920
-      Tileset_57: -1698466225
-      ToolStorage: -1061438333
-      WaterStorage: 33142790
-      WeaponStorage: -1801611079
-      Well: -1982748343
-      WoodStorage: -942199977
-      tileForest: -1940790720
-      tileMountain: 38847343
-      tilePlain: -1825908845
-      tileSand: -972110429
-      tileWater: 1451664906
+      Tileset_54: -1659577551
+      Tileset_55: -532372355
+      Tileset_56: 696667695
+      Tileset_57: -1993269078
+      altar: 1508473863
+      animal: 45696757
+      blacksmith: 1521791063
+      buildingConstruction: -2015556466
+      buildingDestroyed: -1985106458
+      burrow: -219658125
+      bush: 877048372
+      ductCD: 465264949
+      ductCDR: 392662108
+      ductCUL: 2137139639
+      ductCUR: 2030159117
+      ductED: -541483224
+      ductEL: -2046413929
+      ductER: -571172804
+      ductEU: 1557236904
+      ductHS: -552070386
+      ductSD: -1359111508
+      ductSL: 1462739021
+      ductSR: 1316018
+      ductSU: 1775207193
+      ductVS: 183922469
+      farm: 34235906
+      farmAnimals: -1085806232
+      foodStorage: -963548487
+      forest: 705625172
+      grassTile: -1031686721
+      house: 1664788753
+      kitchen: 1617631979
+      lake: -478730192
+      mine: -709799108
+      mountainTile: -39798404
+      ore: 2090530509
+      plainTile: -1234426241
+      plantationAF: -209201148
+      plantationAG: -1085703835
+      plantationBase: -814152924
+      plantationFP: -1746532639
+      plantationGP: 1187746938
+      plantationPlowed: -559018570
+      plantationTF: 2053750079
+      plantationTG: -1263749133
+      quarry: -1314901284
+      reservoir: -1527718933
+      rocks: -1207412713
+      sandTile: 329613427
+      sawmill: 705856569
+      seedStorage: 716342335
+      steelStorage: 6613430
+      stoneStorage: -1077279292
+      toolStorage: 137914229
+      waterTile: 773100651
+      weaponStorage: -827305244
+      well: 328802656
+      woodStorage: -1929359362
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
