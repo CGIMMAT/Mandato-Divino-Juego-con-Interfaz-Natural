@@ -9,6 +9,7 @@ public class DragCamera : MonoBehaviour //Script sencillo para controlar el movi
     private bool isDragging = false;
     public float dragSpeed = 5.0f; //Velocidad a la que se movera la camara al arrastrar
     public MapGenerator MG; //Referencia al generador del mapa para poder limitar el movimiento solo a las casillas generadas
+    public VillageSpawner VS; //Referencia al spawner de la partida para que la camara aparezca justo donde el altar
     public Tilemap tilemap; //Referencia al tilemap en sí
     private float minX, maxX, minY, maxY;
 
@@ -25,11 +26,9 @@ public class DragCamera : MonoBehaviour //Script sencillo para controlar el movi
         minY = bounds.yMin + camHeight;
         maxY = bounds.yMax - camHeight;
 
-        //Y otro para que al empezar la partida estemos en el centro del mapa
-        //Quitar este cuando haya un sistem de spawneo de aldeanos
-        float centerX = (bounds.xMin + bounds.xMax) / 2f;
-        float centerY = (bounds.yMin + bounds.yMax) / 2f;
-        transform.position = new Vector3(centerX, centerY, transform.position.z);
+        //Y otro para que al empezar la partida estemos donde el altar inicial
+        Vector3 worldPos = tilemap.GetCellCenterWorld(VS.startPos);
+        transform.position = new Vector3(Mathf.Clamp(worldPos.x, minX, maxX), Mathf.Clamp(worldPos.y, minY, maxY), transform.position.z);
     }
 
     void Update()
