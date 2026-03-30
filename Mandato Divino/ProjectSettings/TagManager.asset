@@ -12,8 +12,8 @@ TagManager:
   - Tiles
   - Water
   - UI
+  - People
   - Objects
-  - 
   - 
   - 
   - 
@@ -44,4 +44,7 @@ TagManager:
     locked: 0
   - name: Objects
     uniqueID: 2464741295
+    locked: 0
+  - name: People
+    uniqueID: 98103899
     locked: 0

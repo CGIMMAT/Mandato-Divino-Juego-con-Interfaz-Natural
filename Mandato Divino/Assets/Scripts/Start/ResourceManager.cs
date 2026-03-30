@@ -36,6 +36,6 @@ public class ResourceManager : MonoBehaviour //Usaremos esta clase como almacen 
         stoneCounter.text = "Piedra: " + stone;
         steelCounter.text = "Metales: " + steel;
         populationCounter.text = "Siervos: " + population;
-        timeCounter.text = "Día " + days.ToString("F0") + " Hora " + hours.ToString("F0");
+        timeCounter.text = "Dia " + days.ToString("F0") + " Hora " + hours.ToString("F0");
     }
 }
