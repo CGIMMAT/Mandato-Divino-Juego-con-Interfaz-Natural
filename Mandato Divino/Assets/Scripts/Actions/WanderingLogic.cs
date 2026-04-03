@@ -14,6 +14,7 @@ public class WanderingLogic : MonoBehaviour //Sistema para que los aldeanos deam
     void Start() //Bucle inicial para decidir l primra dirección que toman
     {
         rb = GetComponent<Rigidbody2D>();
+        rb.freezeRotation = true; //Así se evita que el modelo rote al chocar con objetos
         decisionTimer = Random.Range(decisionTime.x, decisionTime.y);
         ChooseDirection();
     }
@@ -41,9 +42,22 @@ public class WanderingLogic : MonoBehaviour //Sistema para que los aldeanos deam
         currentDirection = Mathf.FloorToInt(Random.Range(0, moveDirection.Length));
     }
 
+    void ChooseDirectionMinusZero() //Así si choca con un objeto y tiene que elegir una nueva dirección, no se quedará parado
+    {
+        int newDir;
+
+        do
+        {
+            newDir = Random.Range(0,4);
+        }
+        while (newDir == currentDirection);
+
+        currentDirection = newDir;
+    }
+
     void OnCollisionEnter2D(Collision2D col) //Detecta las colisiones con los BoxCollidre de los objetos del mapa y fuerza a cambiar de dirección
     {
         rb.velocity = Vector2.zero;
-        ChooseDirection();
+        ChooseDirectionMinusZero();
     }
 }

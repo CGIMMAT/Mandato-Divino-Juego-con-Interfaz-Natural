@@ -10,7 +10,7 @@ public class VillageSpawner : MonoBehaviour //Codigo para controlar los inicios 
     public ResourceManager RM; //Usamos este código para afectar a los contadores de aldeanos
 
     public GameObject altarPrefab; //El altar, que será centro de la aldea
-    public GameObject villagerPrefab; //Los aldeanos, apracerán en las casillas alrededor del altar
+    public VillagerSpawner VIS; //El sistema para fabricar aldeanos
 
     public Vector3Int startPos; //Almacen de la posición iniciañ del altar
     public int maxTrys = 500; //Maximos intentos de encontrar una posición adecuada
@@ -85,7 +85,7 @@ public class VillageSpawner : MonoBehaviour //Codigo para controlar los inicios 
 
                 Vector3Int villagersPos = new Vector3Int(pos.x + x, pos.y + y, 0);
                 Vector3 worldPos = tilemap.GetCellCenterWorld(villagersPos);
-                Instantiate(villagerPrefab, worldPos, Quaternion.identity);
+                VIS.GenerateInitial(worldPos); //Genera un aldeano inicial en la casilla
                 RM.population++;
             }
         }

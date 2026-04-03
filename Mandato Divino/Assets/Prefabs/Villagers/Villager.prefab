@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -6579973977239988136}
   - component: {fileID: -6321071191944105301}
   - component: {fileID: -6075199520079419752}
+  - component: {fileID: -8863769662665808989}
   m_Layer: 0
   m_Name: Villager
   m_TagString: Untagged
@@ -173,3 +174,28 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &-8863769662665808989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5425953984216353650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a6ea8c888291a47872bdf42eb22c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  villagerName: 
+  id: 0
+  age: 0
+  gender: 0
+  lifePoints: 0
+  energyPoints: 0
+  inventorySlots: 0
+  canWork: 0
+  relationship:
+    LoverID: 0
+    inLove: 0
+  maleSprite: {fileID: -998283494, guid: 57217e35dbcb89840bd37f113dcc7a04, type: 3}
+  femaleSprite: {fileID: 1167490956, guid: 57217e35dbcb89840bd37f113dcc7a04, type: 3}
