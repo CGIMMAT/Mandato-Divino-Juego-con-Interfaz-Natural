@@ -4,37 +4,36 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Windows.Speech;
-using TMPro; //solo para la prueba, luego se eliminará si no es necesario
+
 
 public class WordRegister : MonoBehaviour
 {
-    //Código importado para recibir inpust del microfono y actuar en base a las palabras dichas
+    KeywordRecognizer keywordRecognizer;
 
-    KeywordRecognizer KeywordRecognizer;
-    public TextMeshProUGUI text;
-    int wordCounter = 0;
+    Dictionary<string, Action> Actions = new Dictionary<string, Action>();
+    public CommandList CL;
 
-    //Listado que usaremos para almacenar las palabras clave con su respuesta correspondiente
-    Dictionary<string, Action> wordToAction;
     void Start()
     {
-        wordToAction = new Dictionary<string, Action>(); //Se instancia el diccionario y se añaden las palabras clave
-        wordToAction.Add("hola", Register);
+        Actions = new Dictionary<string, Action>();
 
-        KeywordRecognizer = new KeywordRecognizer(wordToAction.Keys.ToArray()); //Se crea el reconocedor para esas palabras clave
-        KeywordRecognizer.OnPhraseRecognized += WordRecognized; //Se le asigna la función para que actue al reconocer las palabras
-        KeywordRecognizer.Start(); //Se inicializa
+        // Asociamos palabras con funciones de CommandList
+        //Actions.Add("palabra", CL.funcion)
+
+        keywordRecognizer = new KeywordRecognizer(Actions.Keys.ToArray());
+        keywordRecognizer.OnPhraseRecognized += WordRecognized;
+        keywordRecognizer.Start();
     }
 
     private void WordRecognized(PhraseRecognizedEventArgs word)
     {
-        Debug.Log("Se ha registrado la palabbra: " + word.text); //Registramos que se ha recibido bien la palabra
-        wordToAction[word.text].Invoke(); //Se invoca la acción asociada a la palabra dentro del diccionario
-    }
+        Debug.Log("Palabra detectada: " + word.text);
 
-    private void Register()
-    {
-        wordCounter++;
-        text.text = "Has dicho Hola " + wordCounter + " veces";
+        // Solo actúa si la palabra está en el diccionario
+        if (Actions.ContainsKey(word.text))
+        {
+            Actions[word.text].Invoke();
+        }
+        // Si no está, no hace nada
     }
 }

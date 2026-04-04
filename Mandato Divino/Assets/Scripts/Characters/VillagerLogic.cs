@@ -21,6 +21,7 @@ public class VillagerLogic : MonoBehaviour //Datos que deberá tener el prefab d
     public Sprite femaleSprite; //Sprite cuando es mujer
 
     private SpriteRenderer SR; //Componente para cambiar el sprite del prefab
+    public InventoryLogic inventory; //El inventario personal
 
     void Awake()
     {
@@ -60,5 +61,6 @@ public class VillagerLogic : MonoBehaviour //Datos que deberá tener el prefab d
         };
 
         SpriteSelector();
+        inventory = new InventoryLogic(inventorySlots); //Inicializamos su inventario personal
     }
 }

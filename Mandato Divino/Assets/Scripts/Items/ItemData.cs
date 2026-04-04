@@ -5,7 +5,9 @@ using UnityEngine;
 public abstract class ItemData : ScriptableObject //Datos genericos para todos los items que no son recursos
 {
     public string itemName; //Nombre del item
-    // public Sprite image; // Su imagen, de momento no tendrán 
+    // public Sprite image; // Su imagen, de momento no tendrán
+    public bool stackable; //Si se pueden hacer stacks en el inventario o no
+    public int maxStack; //El tamaño máximo de un stack
     public List<Cost> productionCost; //Lo que cuestan
     public float productionTime; //Lo que se tarda
 }
