@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.Windows.Speech;
 
 
-public class WordRegister : MonoBehaviour
+public class WordRegister : MonoBehaviour //Nuevo sistema para leer comandos
 {
     KeywordRecognizer keywordRecognizer;
 

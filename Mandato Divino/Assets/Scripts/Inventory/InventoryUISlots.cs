@@ -4,10 +4,15 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class InventoryUISlots : MonoBehaviour
+public class InventoryUISlots : MonoBehaviour //El encargado de gestionar los slots del inventario visualmente
 {
     public Image icon;
     public TextMeshProUGUI quantityText;
+
+    void Awake()
+    {
+        quantityText = GetComponentInChildren<TextMeshProUGUI>();
+    }
 
     public void SetSlots(InventorySlots slot)
     {

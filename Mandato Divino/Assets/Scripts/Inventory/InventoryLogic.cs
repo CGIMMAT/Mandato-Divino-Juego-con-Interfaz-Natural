@@ -5,10 +5,10 @@ using UnityEngine;
 [System.Serializable]
 public class InventoryLogic
 {
-    public int maxSlots;
+    public int maxSlots; //El maximo de items almacenables
     public List<InventorySlots> slots;
 
-    public InventoryLogic(int slotsCount)
+    public InventoryLogic(int slotsCount) //Añade nuevos slots de inventario si es posible y si hay objetos para esos slots
     {
         maxSlots = slotsCount;
         slots = new List<InventorySlots>();
@@ -19,9 +19,9 @@ public class InventoryLogic
         }
     }
 
-    public bool AddItem(ItemData item, int amount = 1)
+    public bool AddItem(ItemData item, int amount = 1) //Sistema para añadir items a los slots
     {
-        if (item.stackable)
+        if (item.stackable) //Si se puede stackear, varias copias se almacenan en uno
         {
             for (int i = 0; i < maxSlots; i++)
             {
@@ -57,7 +57,7 @@ public class InventoryLogic
         return false;
     }
 
-    public void RemoveItem(int index, int amount = 1)
+    public void RemoveItem(int index, int amount = 1) //La logica para quitar items
     {
         if (index < 0 || index >= maxSlots) return;
 

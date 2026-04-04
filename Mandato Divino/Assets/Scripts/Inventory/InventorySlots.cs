@@ -14,7 +14,7 @@ public class InventorySlots //Código para definir la lógica de cada slot que p
         this.quantity = quantity;
     }
 
-    public bool IsEmpty()
+    public bool IsEmpty() //No hay slot si no hay item
     {
         return item == null;
     }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InventoryUI : MonoBehaviour
+public class InventoryUI : MonoBehaviour //El encargado de la parte visual del inventario
 {
     public GameObject slotPrefab;
     public Transform gridParent;
