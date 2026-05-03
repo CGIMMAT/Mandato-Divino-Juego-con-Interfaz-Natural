@@ -13,8 +13,17 @@ MonoBehaviour:
   m_Name: Backpack
   m_EditorClassIdentifier: 
   itemName: Mochila
+  icon: {fileID: 431310741, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
+  isStackable: 0
+  maxStack: 1
+  resourceType: 6
+  itemPrefab: {fileID: 5505108440830146926, guid: be3bdd76aa6f4164fa0907d0307db7a6, type: 3}
+  id: 2
+  actionType: 2
   productionCost:
-  - material: 2
+  - material: 3
     amount: 20
   productionTime: 2
+  isEquipable: 0
+  isEquiped: 0
   slots: 15

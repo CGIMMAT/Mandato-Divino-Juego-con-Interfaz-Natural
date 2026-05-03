@@ -13,14 +13,22 @@ MonoBehaviour:
   m_Name: steelProjectile
   m_EditorClassIdentifier: 
   itemName: Bala de Metal
+  icon: {fileID: 608095320, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
+  isStackable: 0
+  maxStack: 1
+  resourceType: 6
+  itemPrefab: {fileID: 748667927088443816, guid: 1f31070ce6656f74488c077c4e2e6600, type: 3}
+  id: 17
+  actionType: 10
   productionCost:
-  - material: 2
+  - material: 3
     amount: 8
-  - material: 4
+  - material: 5
     amount: 3
   productionTime: 1.5
+  isEquipable: 0
+  isEquiped: 0
   durability: 1
-  attackType: Projectile
   damage: 25
   attackRange: 0.7
   attackSpeed: 0

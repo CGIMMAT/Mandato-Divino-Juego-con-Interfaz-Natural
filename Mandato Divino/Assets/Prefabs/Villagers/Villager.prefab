@@ -194,8 +194,22 @@ MonoBehaviour:
   energyPoints: 0
   inventorySlots: 0
   canWork: 0
+  isBusy: 0
   relationship:
     LoverID: 0
     inLove: 0
+  fatherID: 0
+  motherID: 0
   maleSprite: {fileID: -998283494, guid: 57217e35dbcb89840bd37f113dcc7a04, type: 3}
   femaleSprite: {fileID: 1167490956, guid: 57217e35dbcb89840bd37f113dcc7a04, type: 3}
+  inventory:
+    maxSlots: 0
+    slots: []
+  equipedItem:
+    data: {fileID: 0}
+    isEquiped: 0
+    durability: 0
+  attackDamage: 1
+  recolectDamage: 1
+  currentFactory: {fileID: 0}
+  currentHome: {fileID: 0}

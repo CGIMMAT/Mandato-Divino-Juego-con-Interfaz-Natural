@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9cbb080eeebddd4093b58543951d571, type: 3}
   m_Name: WaterStorage
   m_EditorClassIdentifier: 
-  id: 11
+  id: 10
   buildingName: Embalse
   lifePoints: 50
-  image: {fileID: -1527718933, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
+  prefab: {fileID: 6594060230072763499, guid: 37c4060115950604190cea33189d88ff, type: 3}
   productionCost:
-  - material: 3
-    amount: 15
-  productionTime: 4
+  - material: 4
+    amount: 50
+  productionTime: 8
   size: {x: 1, y: 1}
   needsEmptyTile: 1
-  storedMaterial: 0
-  storageCapacity: 1000
+  storedMaterial: 1
+  storageCapacity: 200

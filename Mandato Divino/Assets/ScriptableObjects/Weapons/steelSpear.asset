@@ -13,14 +13,22 @@ MonoBehaviour:
   m_Name: steelSpear
   m_EditorClassIdentifier: 
   itemName: Lanza de Metal
+  icon: {fileID: -1576167862, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
+  isStackable: 0
+  maxStack: 1
+  resourceType: 6
+  itemPrefab: {fileID: 748667927088443816, guid: d7463a9187b03104691703b6e3a21492, type: 3}
+  id: 26
+  actionType: 12
   productionCost:
-  - material: 2
+  - material: 3
     amount: 15
-  - material: 4
+  - material: 5
     amount: 5
   productionTime: 3
+  isEquipable: 0
+  isEquiped: 0
   durability: 90
-  attackType: Pierce
   damage: 6
   attackRange: 2
   attackSpeed: 2

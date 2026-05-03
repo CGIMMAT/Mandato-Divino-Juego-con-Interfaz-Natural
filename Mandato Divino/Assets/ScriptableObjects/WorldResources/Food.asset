@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14c866ebbc8cc2e448c0494785da7f1a, type: 3}
+  m_Name: Food
+  m_EditorClassIdentifier: 
+  itemName: Comida
+  icon: {fileID: -1162741615, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
+  isStackable: 1
+  maxStack: 10
+  resourceType: 2
+  resourceName: Comida
+  resourcePrefab: {fileID: 2045983888811440303, guid: f3cfc61f389d9e3428d08e652528101b, type: 3}
+  value: 5

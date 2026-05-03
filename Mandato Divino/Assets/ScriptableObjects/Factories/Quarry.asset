@@ -12,18 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 904ad3368ede21f448ebb112c07637e1, type: 3}
   m_Name: Quarry
   m_EditorClassIdentifier: 
-  id: 7
+  id: 6
   buildingName: Cantera
   lifePoints: 40
-  image: {fileID: -1314901284, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
+  prefab: {fileID: 6594060230072763499, guid: 8f8d6537c99789a44b644f3d78f97426, type: 3}
   productionCost:
-  - material: 2
+  - material: 3
     amount: 50
   productionTime: 6
   size: {x: 1, y: 1}
   needsEmptyTile: 0
-  producedMaterial: 3
-  productionRate: 0
+  producedMaterial: 4
+  productionRate: 5
   maxStorage: 50
   workBenches: 10
-  needsWorker: 0
+  needsWorker: 1

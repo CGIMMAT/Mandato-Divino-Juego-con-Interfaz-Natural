@@ -13,12 +13,20 @@ MonoBehaviour:
   m_Name: Hammer
   m_EditorClassIdentifier: 
   itemName: Martillo de Piedra
+  icon: {fileID: -1488347310, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
+  isStackable: 0
+  maxStack: 1
+  resourceType: 6
+  itemPrefab: {fileID: 5505108440830146926, guid: 744e8e186307ec445b58a120b91db530, type: 3}
+  id: 4
+  actionType: 3
   productionCost:
-  - material: 2
-    amount: 10
   - material: 3
+    amount: 10
+  - material: 4
     amount: 5
   productionTime: 1
+  isEquipable: 0
+  isEquiped: 0
   durability: 30
-  use: Build
   effectivity: 3

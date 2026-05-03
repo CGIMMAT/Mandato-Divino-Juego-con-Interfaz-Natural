@@ -13,12 +13,20 @@ MonoBehaviour:
   m_Name: Pickaxe
   m_EditorClassIdentifier: 
   itemName: Pico de Piedra
+  icon: {fileID: 2133460271, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
+  isStackable: 0
+  maxStack: 1
+  resourceType: 6
+  itemPrefab: {fileID: 5505108440830146926, guid: a41ca63621ee6504d8b8c023d37a6950, type: 3}
+  id: 7
+  actionType: 5
   productionCost:
-  - material: 2
-    amount: 10
   - material: 3
     amount: 10
+  - material: 4
+    amount: 10
   productionTime: 1
+  isEquipable: 0
+  isEquiped: 0
   durability: 40
-  use: Mine
   effectivity: 5

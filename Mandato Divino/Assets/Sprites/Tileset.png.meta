@@ -105,14 +105,14 @@ TextureImporter:
         width: 150
         height: 150
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ebe11539ebdc6249bd9297bfe6a8e73
-      internalID: 773100651
+      spriteID: ae335ba79febb774ebff9f162866f9d5
+      internalID: 554154991
       vertices: []
       indices: 
       edges: []
@@ -126,14 +126,14 @@ TextureImporter:
         width: 150
         height: 150
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6da7faca7c520745a54ed25a0ea5e02
-      internalID: 329613427
+      spriteID: 7f398c85ea8835040a5c57c17092a039
+      internalID: -929485366
       vertices: []
       indices: 
       edges: []
@@ -147,14 +147,14 @@ TextureImporter:
         width: 150
         height: 150
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55564df96b2d165458a9b53895d9e5d0
-      internalID: -1234426241
+      spriteID: 631b68eaccfa2d145a986fb62176cce0
+      internalID: -1746228943
       vertices: []
       indices: 
       edges: []
@@ -168,20 +168,20 @@ TextureImporter:
         width: 150
         height: 150
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc734ce476357594f80aca670e3d235c
-      internalID: -1031686721
+      spriteID: 5187dc03efb102d498f399890bb3b0e7
+      internalID: -1925556206
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mountainTile
+      name: MountainTile
       rect:
         serializedVersion: 2
         x: 600
@@ -189,14 +189,14 @@ TextureImporter:
         width: 150
         height: 150
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82c5ad6be5ed1c244adb8112eceb5f29
-      internalID: -39798404
+      spriteID: a078c71385b6c374689eb66e26fdfc73
+      internalID: 940014822
       vertices: []
       indices: 
       edges: []
@@ -210,14 +210,14 @@ TextureImporter:
         width: 150
         height: 150
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07298bec7f020c74b9eb970c0b983e85
-      internalID: -478730192
+      spriteID: 0931beac77c30d14c9e72b0deb17748e
+      internalID: 1547220869
       vertices: []
       indices: 
       edges: []
@@ -231,14 +231,14 @@ TextureImporter:
         width: 150
         height: 150
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06c9b271bad864e4296846fede9c4dd3
-      internalID: 705625172
+      spriteID: 358b10050d5efea44b0458d92cd65c81
+      internalID: -786546047
       vertices: []
       indices: 
       edges: []
@@ -252,14 +252,14 @@ TextureImporter:
         width: 150
         height: 150
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ee8c887453eff5429f506a778091e11
-      internalID: -219658125
+      spriteID: a061956a3020ba24d983e3cac48145c9
+      internalID: 1431817756
       vertices: []
       indices: 
       edges: []
@@ -273,14 +273,14 @@ TextureImporter:
         width: 150
         height: 150
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efe33576322967343a58fd64dafe4985
-      internalID: -1207412713
+      spriteID: b1d07f95de72f8b408ecf5c33cb05344
+      internalID: 453686337
       vertices: []
       indices: 
       edges: []
@@ -294,14 +294,14 @@ TextureImporter:
         width: 150
         height: 150
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be5c78e6e35dddb4cb8277f90eaf809b
-      internalID: 2090530509
+      spriteID: b01610be6a615084dbcb2843dff952ff
+      internalID: 1581764981
       vertices: []
       indices: 
       edges: []
@@ -315,14 +315,14 @@ TextureImporter:
         width: 150
         height: 150
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f0efc13e74f7e846b94188b472bbc5d
-      internalID: 877048372
+      spriteID: 3096dcc9078a93f46a87c5ef459c3b42
+      internalID: -1852485955
       vertices: []
       indices: 
       edges: []
@@ -336,14 +336,14 @@ TextureImporter:
         width: 150
         height: 150
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1fc9dfa44150466459ecae9b57cc682c
-      internalID: 45696757
+      spriteID: bfea36fa0a7e2f145b7848c83f94f12c
+      internalID: -1249070563
       vertices: []
       indices: 
       edges: []
@@ -357,14 +357,14 @@ TextureImporter:
         width: 150
         height: 150
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7e6cf356fdb83444827e354aaeb3286
-      internalID: 1664788753
+      spriteID: a2fb34f1cd53b244cb15ca1b1e66be6c
+      internalID: 1396834419
       vertices: []
       indices: 
       edges: []
@@ -378,14 +378,14 @@ TextureImporter:
         width: 150
         height: 150
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc603c3a6a7b8544eaeb0e2407770d4c
-      internalID: -963548487
+      spriteID: 6e1a4c1f250a2c349aa435ab9e181130
+      internalID: 1236684872
       vertices: []
       indices: 
       edges: []
@@ -399,14 +399,14 @@ TextureImporter:
         width: 150
         height: 150
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02bc9d218da2c5e4b9f9bc29cc8ad724
-      internalID: 1617631979
+      spriteID: 0ed1685a304cbe8428e2f620716077e1
+      internalID: 337814742
       vertices: []
       indices: 
       edges: []
@@ -420,182 +420,14 @@ TextureImporter:
         width: 150
         height: 150
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bc496469d86ffa42b2cd58d3702842d
-      internalID: 1508473863
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plantationPlowed
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 750
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 02d3147f3fc40dc458147ba3c3d91cb7
-      internalID: -559018570
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plantationBase
-      rect:
-        serializedVersion: 2
-        x: 150
-        y: 750
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d4746a284f11aca40ac3cba61ad33e99
-      internalID: -814152924
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plantationGP
-      rect:
-        serializedVersion: 2
-        x: 300
-        y: 750
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b8ab5d9e6d577cb4aa7e1c3d918d8762
-      internalID: 1187746938
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plantationFP
-      rect:
-        serializedVersion: 2
-        x: 450
-        y: 750
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 68f4a9d3da2cc064c964e099e3a8fa1c
-      internalID: -1746532639
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plantationAG
-      rect:
-        serializedVersion: 2
-        x: 600
-        y: 750
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fc02112375b983d4fae602cfa0702911
-      internalID: -1085703835
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plantationAF
-      rect:
-        serializedVersion: 2
-        x: 750
-        y: 750
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8894cd20d30120c49b8b075dcc80fd26
-      internalID: -209201148
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plantationTG
-      rect:
-        serializedVersion: 2
-        x: 900
-        y: 750
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 14627ac8c13f04b4691d9729c70c3992
-      internalID: -1263749133
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plantationTF
-      rect:
-        serializedVersion: 2
-        x: 1050
-        y: 750
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aa9b1733bf8c94e44a36d77329f2aeb2
-      internalID: 2053750079
+      spriteID: 5f183af4a2a25d540846c478cc91b275
+      internalID: 1439538399
       vertices: []
       indices: 
       edges: []
@@ -605,39 +437,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 600
+        y: 750
         width: 150
         height: 150
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6eb3f0e617f50448b0eadd5016baf95
-      internalID: 34235906
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: farmAnimals
-      rect:
-        serializedVersion: 2
-        x: 150
-        y: 600
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0ea32eff4028a0e41a8307fd9df61562
-      internalID: -1085806232
+      spriteID: 022856d4d5d440e4094127e0e1a99e71
+      internalID: 1309739947
       vertices: []
       indices: 
       edges: []
@@ -646,19 +457,19 @@ TextureImporter:
       name: sawmill
       rect:
         serializedVersion: 2
-        x: 300
-        y: 600
+        x: 150
+        y: 750
         width: 150
         height: 150
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 255b3942ffabc1244aace37c8cdc823a
-      internalID: 705856569
+      spriteID: ad44d10476076cc4da503dd6777ad932
+      internalID: 1545303131
       vertices: []
       indices: 
       edges: []
@@ -667,481 +478,40 @@ TextureImporter:
       name: woodStorage
       rect:
         serializedVersion: 2
-        x: 450
-        y: 600
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6511f0ceb1f3afa4ebfa45c2dc8f626e
-      internalID: -1929359362
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: seedStorage
-      rect:
-        serializedVersion: 2
-        x: 600
-        y: 600
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1a880b514f26de04784901a45aea58e1
-      internalID: 716342335
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: stoneStorage
-      rect:
-        serializedVersion: 2
-        x: 750
-        y: 600
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0c0ef9c155cd24b4093b6bf49c2da126
-      internalID: -1077279292
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mine
-      rect:
-        serializedVersion: 2
-        x: 900
-        y: 600
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3a9b70f9258d3634ab153de1311562a1
-      internalID: -709799108
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: quarry
-      rect:
-        serializedVersion: 2
-        x: 1050
-        y: 600
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9144f9060b593284180e01b1cee98764
-      internalID: -1314901284
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: reservoir
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 450
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6a1e55af1aa3aa343aa153afbc0d0fe2
-      internalID: -1527718933
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blacksmith
-      rect:
-        serializedVersion: 2
-        x: 150
-        y: 450
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eb0d51ae34ff51342adea9f307c83a42
-      internalID: 1521791063
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: weaponStorage
-      rect:
-        serializedVersion: 2
         x: 300
-        y: 450
+        y: 750
         width: 150
         height: 150
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 913b5b1907e9d444a9aec30fb41aa7f2
-      internalID: -827305244
+      spriteID: 6497ac46257b58749b28c692adf471d3
+      internalID: 1773796299
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toolStorage
+      name: plantation
       rect:
         serializedVersion: 2
         x: 450
-        y: 450
+        y: 750
         width: 150
         height: 150
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e083f7f37e20fd643a58a5443562771b
-      internalID: 137914229
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ductSR
-      rect:
-        serializedVersion: 2
-        x: 600
-        y: 450
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 78d9c95d5ddf86f458b08365525c30c4
-      internalID: 1316018
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ductHS
-      rect:
-        serializedVersion: 2
-        x: 750
-        y: 450
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7c906cf6d7d4b834e8a15df3ea8332ba
-      internalID: -552070386
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ductCDR
-      rect:
-        serializedVersion: 2
-        x: 900
-        y: 450
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b0945eab3d9d3824ba459929701da641
-      internalID: 392662108
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ductCD
-      rect:
-        serializedVersion: 2
-        x: 1050
-        y: 450
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 765c7a39621e0b445bd68b8a9646bfbe
-      internalID: 465264949
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ductCUR
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 300
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4f35fe816d16c404f9a14aa3c18cedcf
-      internalID: 2030159117
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ductCUL
-      rect:
-        serializedVersion: 2
-        x: 150
-        y: 300
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c5ac9d805175d754db0c32defc443183
-      internalID: 2137139639
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ductVS
-      rect:
-        serializedVersion: 2
-        x: 300
-        y: 300
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5d6b83c2f9b2f4147ab4dc00832c56ee
-      internalID: 183922469
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ductSL
-      rect:
-        serializedVersion: 2
-        x: 450
-        y: 300
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0f0db86567626074e9c2b79dd9a37491
-      internalID: 1462739021
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ductSD
-      rect:
-        serializedVersion: 2
-        x: 600
-        y: 300
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d7578a2419d6c7d499200d941519e3a8
-      internalID: -1359111508
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ductSU
-      rect:
-        serializedVersion: 2
-        x: 750
-        y: 300
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cd4bf78bba5002b47ac9fd005d013ed7
-      internalID: 1775207193
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ductEL
-      rect:
-        serializedVersion: 2
-        x: 900
-        y: 300
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a5efb1f9b6ee1a34699fa6bd00227354
-      internalID: -2046413929
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ductER
-      rect:
-        serializedVersion: 2
-        x: 1050
-        y: 300
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4a4af73dd4cace54d92f2604446f0ae5
-      internalID: -571172804
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ductEU
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 150
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f6947affbb6e93e4da56a51a93b6b1ed
-      internalID: 1557236904
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ductED
-      rect:
-        serializedVersion: 2
-        x: 150
-        y: 150
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 950d8b1b11eb7cd4d8d42b24d556127d
-      internalID: -541483224
+      spriteID: 21d364fc961c8d549a3136c717e97fee
+      internalID: 1968775495
       vertices: []
       indices: 
       edges: []
@@ -1150,61 +520,61 @@ TextureImporter:
       name: well
       rect:
         serializedVersion: 2
-        x: 300
-        y: 150
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: acf3e6dcb5329e34ab24084c39295b14
-      internalID: 328802656
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buildingConstruction
-      rect:
-        serializedVersion: 2
-        x: 450
-        y: 150
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d57b9492b396baa46a1e911a2039b894
-      internalID: -2015556466
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buildingDestroyed
-      rect:
-        serializedVersion: 2
         x: 600
-        y: 150
+        y: 750
         width: 150
         height: 150
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fde5df029391614fb9487bce32522e8
-      internalID: -1985106458
+      spriteID: b75328bc0a9cf5640b491b1fb99f649b
+      internalID: -2061826212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: construction
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 750
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2f6c2a8cc19eb9478bb0d3b2d6156c1
+      internalID: 1644658374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: destroyed
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 750
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e39865035d7e7343b0419832bc09a70
+      internalID: -172876147
       vertices: []
       indices: 
       edges: []
@@ -1213,25 +583,655 @@ TextureImporter:
       name: steelStorage
       rect:
         serializedVersion: 2
-        x: 750
-        y: 150
+        x: 1050
+        y: 750
         width: 150
         height: 150
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e9629c16e6093a408987cfed1ed852c
-      internalID: 6613430
+      spriteID: 137a1dd58b5187b489f175861656fd89
+      internalID: -1276452060
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_54
+      name: stoneStorage
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b6b23d466897fe47933a4dd2c314d83
+      internalID: 229729727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mine
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 600
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24f5e8c6fa6222c49866dcbe83ce7d8b
+      internalID: 1653861920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quarry
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 600
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5841f8a9936e18f48894a6b3e26edf4d
+      internalID: 986934398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterStorage
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 600
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e721a83df9a0ddf4fac115a9d8180642
+      internalID: -169229681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blacksmith
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 600
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e699cc4ed1a09846b0a9a9caa4fea9b
+      internalID: 733615650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weaponStorage
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 600
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c690c123cb68f304e863c980017049be
+      internalID: -1256069402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toolStorage
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 600
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cbbfc65284ea9a4e80a2da01601e40b
+      internalID: 362911732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 600
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91718ded2604c1240ad5be80da2c55e5
+      internalID: -1277106766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 450
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d696e4d56a3f12a4b87c8354952a4625
+      internalID: -1162741615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 450
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 054a49a7d259c3e439764f8e3d307508
+      internalID: -333388719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 450
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f410dc5c7c6d641a4c07e6ff8d74ca
+      internalID: -859516708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steel
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 450
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6be84bbe41ff5d04e8722281b8151483
+      internalID: 2059952183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backpack
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 450
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9273c1827f16e947b80e798ebe640ca
+      internalID: 431310741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bucket
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 450
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 870f3a5d69bf888419961942bd58c566
+      internalID: -1667721440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pan
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 450
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc4b531cdbc00a341aefb0b64302ba29
+      internalID: -837663768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shovel
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 450
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b0804bd4d3cc9a489722460ae930b69
+      internalID: -582460200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: axe
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 425793858806cad489079740ff2ea35e
+      internalID: 1499905115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steelAxe
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 300
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edc277b79186425489071c8399617fee
+      internalID: 882576214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pickaxe
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 300
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 464e766048fe83b4a8d44c7cd39f3efc
+      internalID: 2133460271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steelPickaxe
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 300
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a8201f7e7904e4297f69f16f49e53f
+      internalID: 546513339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammer
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 300
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e78a3ef89bf6a74abad9fcb8e4d79d7
+      internalID: -1488347310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steelHammer
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 300
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdbc7d1ebcaa9b04c889d043673f49b1
+      internalID: -1492534083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballista
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 300
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30e11d2578dd6ed43aab172198482aa2
+      internalID: -317917650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 300
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98b3194e41a39ca4a838b6c3377d2c9f
+      internalID: 67369288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodArrow
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 150
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a05282e8a110a64fa209c31dae18e9b
+      internalID: -2147171969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneArrow
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 150
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c76756dd7b99b4e8624cf88fedcf56
+      internalID: -1600555915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steelArrow
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 150
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a264a1dc56929df43938c7240b9ad94d
+      internalID: 608095320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodShield
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 150
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5bf7e788abc9854f84179e478ac19f4
+      internalID: -625688226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneShield
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 150
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acc0d5aa846a7c041b9704027b21daac
+      internalID: 1360031904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steelShield
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 150
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28e148e47cee3a244aee731e73ef4407
+      internalID: -1506421682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodSword
       rect:
         serializedVersion: 2
         x: 900
@@ -1239,20 +1239,83 @@ TextureImporter:
         width: 150
         height: 150
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 501cddb9302a8494dbe3506aa88fd8a7
-      internalID: -1659577551
+      spriteID: d23aebd58aa14874785157d757369196
+      internalID: -1009093481
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_55
+      name: stoneSword
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 150
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da55c23dc8688d140af255db6accce70
+      internalID: -2125403509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steelSword
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf03eb5dede050d4084909a24e425aa3
+      internalID: -175883386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodSpear
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29aea64ed5553524f88448fdd36b0a01
+      internalID: -1712990263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneSpear
       rect:
         serializedVersion: 2
         x: 300
@@ -1260,20 +1323,62 @@ TextureImporter:
         width: 150
         height: 150
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72cab3e9e0bcc8944b3a44e1cf0f5b77
-      internalID: -532372355
+      spriteID: e4d877d4c2417914591074607d818e71
+      internalID: -782404724
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_56
+      name: steelSpear
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 0
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28d1c6dac1b12d342b7515a0601ffdf3
+      internalID: -1576167862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodWarhammer
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0608b1859a23988449abc3cb841ee0bf
+      internalID: -1710162971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneWarhammer
       rect:
         serializedVersion: 2
         x: 750
@@ -1281,20 +1386,20 @@ TextureImporter:
         width: 150
         height: 150
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b697fd7644141934ba3968b3b9518d3d
-      internalID: 696667695
+      spriteID: b72e348fd6fcb11409428962b745c44c
+      internalID: -89298551
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_57
+      name: steelWarhammer
       rect:
         serializedVersion: 2
         x: 900
@@ -1302,14 +1407,14 @@ TextureImporter:
         width: 150
         height: 150
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44d01471594d2da4c83e22557cbad4b4
-      internalID: -1993269078
+      spriteID: aa5760835a4ebb84599d7ec850321584
+      internalID: 31553779
       vertices: []
       indices: 
       edges: []
@@ -1325,64 +1430,69 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Tileset_54: -1659577551
-      Tileset_55: -532372355
-      Tileset_56: 696667695
-      Tileset_57: -1993269078
-      altar: 1508473863
-      animal: 45696757
-      blacksmith: 1521791063
-      buildingConstruction: -2015556466
-      buildingDestroyed: -1985106458
-      burrow: -219658125
-      bush: 877048372
-      ductCD: 465264949
-      ductCDR: 392662108
-      ductCUL: 2137139639
-      ductCUR: 2030159117
-      ductED: -541483224
-      ductEL: -2046413929
-      ductER: -571172804
-      ductEU: 1557236904
-      ductHS: -552070386
-      ductSD: -1359111508
-      ductSL: 1462739021
-      ductSR: 1316018
-      ductSU: 1775207193
-      ductVS: 183922469
-      farm: 34235906
-      farmAnimals: -1085806232
-      foodStorage: -963548487
-      forest: 705625172
-      grassTile: -1031686721
-      house: 1664788753
-      kitchen: 1617631979
-      lake: -478730192
-      mine: -709799108
-      mountainTile: -39798404
-      ore: 2090530509
-      plainTile: -1234426241
-      plantationAF: -209201148
-      plantationAG: -1085703835
-      plantationBase: -814152924
-      plantationFP: -1746532639
-      plantationGP: 1187746938
-      plantationPlowed: -559018570
-      plantationTF: 2053750079
-      plantationTG: -1263749133
-      quarry: -1314901284
-      reservoir: -1527718933
-      rocks: -1207412713
-      sandTile: 329613427
-      sawmill: 705856569
-      seedStorage: 716342335
-      steelStorage: 6613430
-      stoneStorage: -1077279292
-      toolStorage: 137914229
-      waterTile: 773100651
-      weaponStorage: -827305244
-      well: 328802656
-      woodStorage: -1929359362
+      MountainTile: 940014822
+      altar: 1439538399
+      animal: -1249070563
+      axe: 1499905115
+      backpack: 431310741
+      ballista: -317917650
+      blacksmith: 733615650
+      bow: 67369288
+      bucket: -1667721440
+      burrow: 1431817756
+      bush: -1852485955
+      construction: 1644658374
+      destroyed: -172876147
+      farm: 1309739947
+      food: -1162741615
+      foodStorage: 1236684872
+      forest: -786546047
+      grassTile: -1925556206
+      hammer: -1488347310
+      house: 1396834419
+      kitchen: 337814742
+      lake: 1547220869
+      mine: 1653861920
+      ore: 1581764981
+      pan: -837663768
+      pickaxe: 2133460271
+      plainTile: -1746228943
+      plantation: 1968775495
+      quarry: 986934398
+      rocks: 453686337
+      sandTile: -929485366
+      sawmill: 1545303131
+      shovel: -582460200
+      steel: 2059952183
+      steelArrow: 608095320
+      steelAxe: 882576214
+      steelHammer: -1492534083
+      steelPickaxe: 546513339
+      steelShield: -1506421682
+      steelSpear: -1576167862
+      steelStorage: -1276452060
+      steelSword: -175883386
+      steelWarhammer: 31553779
+      stone: -859516708
+      stoneArrow: -1600555915
+      stoneShield: 1360031904
+      stoneSpear: -782404724
+      stoneStorage: 229729727
+      stoneSword: -2125403509
+      stoneWarhammer: -89298551
+      toolStorage: 362911732
+      water: -1277106766
+      waterStorage: -169229681
+      waterTile: 554154991
+      weaponStorage: -1256069402
+      well: -2061826212
+      wood: -333388719
+      woodArrow: -2147171969
+      woodShield: -625688226
+      woodSpear: -1712990263
+      woodStorage: 1773796299
+      woodSword: -1009093481
+      woodWarhammer: -1710162971
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -12,18 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 904ad3368ede21f448ebb112c07637e1, type: 3}
   m_Name: Plantation
   m_EditorClassIdentifier: 
-  id: 5
+  id: 4
   buildingName: "Plantaci\xF3n"
   lifePoints: 80
-  image: {fileID: -814152924, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
+  prefab: {fileID: 6594060230072763499, guid: 2573c7b18255ffd489bd30721dd9fbfe, type: 3}
   productionCost:
-  - material: 2
-    amount: 60
-  productionTime: 8
+  - material: 3
+    amount: 80
+  productionTime: 6
   size: {x: 1, y: 1}
   needsEmptyTile: 1
-  producedMaterial: 6
-  productionRate: 0
-  maxStorage: 0
+  producedMaterial: 2
+  productionRate: 20
+  maxStorage: 100
   workBenches: 8
-  needsWorker: 0
+  needsWorker: 1

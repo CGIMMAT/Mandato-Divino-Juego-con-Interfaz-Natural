@@ -12,16 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9f8f8fa9ef7e7c4fab6845aba5f5cd9, type: 3}
   m_Name: Altar
   m_EditorClassIdentifier: 
-  id: 1
+  id: 0
   buildingName: Altar
   lifePoints: 100
-  image: {fileID: 1508473863, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
+  prefab: {fileID: 6594060230072763499, guid: dcb0a16ae7736bc46af08abdd30e85e1, type: 3}
   productionCost:
-  - material: 2
-    amount: 77
   - material: 3
     amount: 77
   - material: 4
+    amount: 77
+  - material: 5
     amount: 7
   productionTime: 7
   size: {x: 1, y: 1}

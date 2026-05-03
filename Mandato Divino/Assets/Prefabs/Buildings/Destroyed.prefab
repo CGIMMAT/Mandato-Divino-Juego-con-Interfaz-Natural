@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7428837133074635528}
   - component: {fileID: 440386073914670009}
+  - component: {fileID: 1046080324351991040}
   m_Layer: 0
   m_Name: Destroyed
   m_TagString: Untagged
@@ -73,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: -1830226001
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1985106458, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
+  m_Sprite: {fileID: -172876147, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -84,3 +85,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1046080324351991040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6594060230072763499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28ccca8dde745154094023ac0f6a0e27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildingID: 0
+  buildingName: 
+  lifePoints: 0
+  size: {x: 0, y: 0}
+  destroyedData: {fileID: 0}
+  data: {fileID: 0}

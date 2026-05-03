@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5017381251324064280}
   - component: {fileID: 1619488178925076634}
   - component: {fileID: 284256104449066689}
+  - component: {fileID: 4026176215896215454}
   m_Layer: 0
   m_Name: Madriguera
   m_TagString: Untagged
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: -1830226001
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: -219658125, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
+  m_Sprite: {fileID: 1431817756, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -130,3 +131,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.65, y: 0.55}
   m_EdgeRadius: 0
+--- !u!114 &4026176215896215454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2333070852881100432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 803561b042281314a9436037d6a800b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resourceName: Madriguera
+  resourceType: 2
+  life: 0
+  maxLife: 0
+  resourcesPeLife: 0
+  recoveryTime: 0

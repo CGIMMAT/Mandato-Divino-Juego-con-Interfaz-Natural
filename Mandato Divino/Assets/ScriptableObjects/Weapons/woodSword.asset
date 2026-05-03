@@ -13,12 +13,20 @@ MonoBehaviour:
   m_Name: woodSword
   m_EditorClassIdentifier: 
   itemName: Espada de Madera
+  icon: {fileID: -1009093481, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
+  isStackable: 0
+  maxStack: 1
+  resourceType: 6
+  itemPrefab: {fileID: 748667927088443816, guid: 655045015c0d62545b76830ed4337e3a, type: 3}
+  id: 21
+  actionType: 13
   productionCost:
-  - material: 2
+  - material: 3
     amount: 15
   productionTime: 1
+  isEquipable: 0
+  isEquiped: 0
   durability: 20
-  attackType: Cut
   damage: 2
   attackRange: 1.5
   attackSpeed: 3

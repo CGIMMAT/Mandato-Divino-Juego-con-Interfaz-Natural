@@ -21,6 +21,12 @@ public class WanderingLogic : MonoBehaviour //Sistema para que los aldeanos deam
 
     void Update() //Nuevos movimientos
     {
+        if (GetComponent<VillagerLogic>().isBusy) //Si está haciendo algo se bloque su movimiento
+        {
+            rb.velocity = Vector2.zero;
+            return;
+        }
+
         if (decisionTimer > 0)
         {
             decisionTimer -= Time.deltaTime;
@@ -34,6 +40,12 @@ public class WanderingLogic : MonoBehaviour //Sistema para que los aldeanos deam
 
     void FixedUpdate() //Calcula las fisicas de los movimientos en intervalos similares a Update
     {
+        if (GetComponent<VillagerLogic>().isBusy) //Si está haciendo algo se bloque su movimiento
+        {
+            rb.velocity = Vector2.zero;
+            return;
+        }
+        
         rb.velocity = moveDirection[currentDirection] * moveSpeed;
     }
 

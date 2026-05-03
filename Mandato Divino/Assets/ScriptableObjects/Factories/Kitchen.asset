@@ -12,22 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 904ad3368ede21f448ebb112c07637e1, type: 3}
   m_Name: Kitchen
   m_EditorClassIdentifier: 
-  id: 10
+  id: 9
   buildingName: Cocina
   lifePoints: 100
-  image: {fileID: 1617631979, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
+  prefab: {fileID: 6594060230072763499, guid: ff1b7699ef21b2f48a27b219a867784f, type: 3}
   productionCost:
-  - material: 3
-    amount: 100
-  - material: 2
-    amount: 50
   - material: 4
+    amount: 100
+  - material: 3
+    amount: 50
+  - material: 5
     amount: 20
   productionTime: 8
   size: {x: 1, y: 1}
   needsEmptyTile: 1
-  producedMaterial: 1
-  productionRate: 3
-  maxStorage: 10
+  producedMaterial: 2
+  productionRate: 30
+  maxStorage: 50
   workBenches: 6
   needsWorker: 1

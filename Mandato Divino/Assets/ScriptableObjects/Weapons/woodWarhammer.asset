@@ -13,12 +13,20 @@ MonoBehaviour:
   m_Name: woodWarhammer
   m_EditorClassIdentifier: 
   itemName: Mazo de Madera
+  icon: {fileID: -1710162971, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
+  isStackable: 0
+  maxStack: 1
+  resourceType: 6
+  itemPrefab: {fileID: 748667927088443816, guid: 203b953d753542049a94934c20eb22d4, type: 3}
+  id: 27
+  actionType: 14
   productionCost:
-  - material: 2
+  - material: 3
     amount: 20
   productionTime: 2
+  isEquipable: 0
+  isEquiped: 0
   durability: 20
-  attackType: Break
   damage: 4
   attackRange: 1
   attackSpeed: 4

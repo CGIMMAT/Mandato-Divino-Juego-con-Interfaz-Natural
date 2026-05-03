@@ -5,77 +5,61 @@ using UnityEngine;
 public class ItemCreator : MonoBehaviour //Sistema simplificado del de los edificios para generar items
 {
     public ResourceManager RM;
+    public BuildingPlacer BP; //Logica para encontrar las herrerías
 
     public Dictionary<ItemData, int> producedItems = new Dictionary<ItemData, int>(); //Sistema para almacenar los objetos generados
 
     public bool TryProduceItem(ItemData item)
     {
         if (item == null) return false; //Se comprueba que el item exista
-        if (!HasResources(item)) return false; //Se comprueba que el jugador tenga los recursos necesarios
-        SpendResources(item);
+        if (!RM.HasResources(item.productionCost)) return false; //Se comprueba que el jugador tenga los recursos necesarios
+        RM.SpendResources(item.productionCost);
         StartCoroutine(ProduceItem(item));
         return true;
     }
 
-    IEnumerator ProduceItem(ItemData item)
+    IEnumerator ProduceItem(ItemData item) //Corrutina para dejar creando el item al jugador durante su tiempo de produccion
     {
         yield return new WaitForSeconds(item.productionTime * 60);
         AddItem(item);
     }
 
-    void AddItem(ItemData item)
+    void AddItem(ItemData item) //Se añade el item al inventario del que lo ha creado
     {
         if (!producedItems.ContainsKey(item))
         {
-            producedItems[item] += 0;
+            producedItems[item] = 0;
         }
 
         producedItems[item]++;
-        Debug.Log("Item producido: " + item.itemName);
     }
 
-    bool HasResources(ItemData item)
+    public FactoriesLogic GetClosestBlacksmith(Vector3 pos) //Codigo para encontar la herreriamás cercana
     {
-        foreach (var cost in item.productionCost)
-        {
-            int current = GetResource(cost.material);
-            if (current < cost.amount) return false;
-        }
-        return true;
-    }
-    
-        void SpendResources(ItemData item)
-    {
-        foreach (var cost in item.productionCost)
-        {
-            ModifyResource(cost.material, -cost.amount);
-        }
-    }
+        FactoriesLogic closest = null;
+        float bestDist = Mathf.Infinity;
 
-    int GetResource(Resources r)
-    {
-        switch (r)
-        {
-            case Resources.Food: return RM.food;
-            case Resources.Water: return RM.water;
-            case Resources.Wood: return RM.wood;
-            case Resources.Stone: return RM.stone;
-            case Resources.Steel: return RM.steel;
-            case Resources.Seeds: return RM.seeds;
-        }
-        return 0;
-    }
+        var buildings = BP.GetPlacedBuildings(); //Se acceden a los edificios ya colocados
 
-    void ModifyResource(Resources r, int amount)
-    {
-        switch (r)
+        foreach (var b in buildings)
         {
-            case Resources.Food: RM.food += amount; break;
-            case Resources.Water: RM.water += amount; break;
-            case Resources.Wood: RM.wood += amount; break;
-            case Resources.Stone: RM.stone += amount; break;
-            case Resources.Seeds: RM.seeds += amount; break;
-            case Resources.Steel: RM.steel += amount; break;
+            GameObject obj = b.Value;
+            if (obj == null) continue;
+
+            FactoriesLogic factory = obj.GetComponent<FactoriesLogic>();
+            if (factory == null) continue;
+
+            if (factory.buildingID != BuildingID.Herreria) continue; //Se revisa la id de estos hasta encontrar coicidencias
+
+            float d = Vector3.Distance(pos, obj.transform.position);
+
+            if (d < bestDist)
+            {
+                bestDist = d;
+                closest = factory;
+            }
         }
+
+        return closest; //Se da la posición más cercana
     }
 }

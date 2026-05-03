@@ -13,14 +13,22 @@ MonoBehaviour:
   m_Name: steelShield
   m_EditorClassIdentifier: 
   itemName: Escudo de Metal
+  icon: {fileID: -1506421682, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
+  isStackable: 0
+  maxStack: 1
+  resourceType: 6
+  itemPrefab: {fileID: 748667927088443816, guid: 7e8757b7aec429149912083d64b629b2, type: 3}
+  id: 20
+  actionType: 11
   productionCost:
-  - material: 2
+  - material: 3
     amount: 30
-  - material: 4
+  - material: 5
     amount: 10
   productionTime: 4
+  isEquipable: 0
+  isEquiped: 0
   durability: 100
-  attackType: Protect
   damage: 0
   attackRange: 0.5
   attackSpeed: 0.5

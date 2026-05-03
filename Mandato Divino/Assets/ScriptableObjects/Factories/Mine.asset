@@ -12,22 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 904ad3368ede21f448ebb112c07637e1, type: 3}
   m_Name: Mine
   m_EditorClassIdentifier: 
-  id: 8
+  id: 7
   buildingName: Mina
   lifePoints: 60
-  image: {fileID: -709799108, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
+  prefab: {fileID: 6594060230072763499, guid: 7c39129df7f66854f95d5414cc86a114, type: 3}
   productionCost:
-  - material: 3
-    amount: 80
-  - material: 2
-    amount: 40
   - material: 4
+    amount: 80
+  - material: 3
+    amount: 40
+  - material: 5
     amount: 10
   productionTime: 24
   size: {x: 1, y: 1}
   needsEmptyTile: 0
-  producedMaterial: 4
-  productionRate: 0.1
+  producedMaterial: 5
+  productionRate: 2
   maxStorage: 50
   workBenches: 10
   needsWorker: 1

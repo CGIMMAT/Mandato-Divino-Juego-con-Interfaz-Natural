@@ -13,12 +13,20 @@ MonoBehaviour:
   m_Name: Axe
   m_EditorClassIdentifier: 
   itemName: Hacha de Piedra
+  icon: {fileID: 1499905115, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
+  isStackable: 0
+  maxStack: 1
+  resourceType: 6
+  itemPrefab: {fileID: 5505108440830146926, guid: 31bc40ed454a048478873492430bcb57, type: 3}
+  id: 0
+  actionType: 1
   productionCost:
-  - material: 2
-    amount: 5
   - material: 3
+    amount: 5
+  - material: 4
     amount: 2
   productionTime: 1
+  isEquipable: 0
+  isEquiped: 0
   durability: 30
-  use: Cut
   effectivity: 2

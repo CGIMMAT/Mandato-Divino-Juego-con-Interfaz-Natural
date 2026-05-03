@@ -13,14 +13,22 @@ MonoBehaviour:
   m_Name: steelArrow
   m_EditorClassIdentifier: 
   itemName: Flecha de Metal
+  icon: {fileID: 608095320, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
+  isStackable: 0
+  maxStack: 1
+  resourceType: 6
+  itemPrefab: {fileID: 748667927088443816, guid: 4e1c9ab5a6f0dba448aa3721969b7057, type: 3}
+  id: 14
+  actionType: 9
   productionCost:
-  - material: 2
+  - material: 3
     amount: 3
-  - material: 4
+  - material: 5
     amount: 2
   productionTime: 0.4
+  isEquipable: 0
+  isEquiped: 0
   durability: 1
-  attackType: Arrow
   damage: 8
   attackRange: 0.2
   attackSpeed: 0

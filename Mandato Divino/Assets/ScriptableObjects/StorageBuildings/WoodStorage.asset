@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9cbb080eeebddd4093b58543951d571, type: 3}
   m_Name: WoodStorage
   m_EditorClassIdentifier: 
-  id: 14
+  id: 12
   buildingName: Almacen de Madera
   lifePoints: 50
-  image: {fileID: -1929359362, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
+  prefab: {fileID: 6594060230072763499, guid: accc80ca7947c5c448fe9e82fc2bd3e7, type: 3}
   productionCost:
-  - material: 2
+  - material: 3
     amount: 30
   productionTime: 8
   size: {x: 1, y: 1}
   needsEmptyTile: 1
-  storedMaterial: 2
+  storedMaterial: 3
   storageCapacity: 150

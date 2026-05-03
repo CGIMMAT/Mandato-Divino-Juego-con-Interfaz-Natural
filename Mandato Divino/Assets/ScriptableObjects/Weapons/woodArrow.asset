@@ -13,12 +13,20 @@ MonoBehaviour:
   m_Name: woodArrow
   m_EditorClassIdentifier: 
   itemName: Flecha de Madera
+  icon: {fileID: -2147171969, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
+  isStackable: 0
+  maxStack: 1
+  resourceType: 6
+  itemPrefab: {fileID: 748667927088443816, guid: e32734779f337a4419bf8fdb02dee4e7, type: 3}
+  id: 12
+  actionType: 9
   productionCost:
-  - material: 2
+  - material: 3
     amount: 2
   productionTime: 0.2
+  isEquipable: 0
+  isEquiped: 0
   durability: 1
-  attackType: Arrow
   damage: 2
   attackRange: 0.1
   attackSpeed: 0

@@ -5,72 +5,226 @@ using UnityEngine;
 [System.Serializable]
 public class InventoryLogic
 {
-    public int maxSlots; //El maximo de items almacenables
+    public int maxSlots;
     public List<InventorySlots> slots;
 
-    public InventoryLogic(int slotsCount) //Añade nuevos slots de inventario si es posible y si hay objetos para esos slots
+    public InventoryLogic(int slotsCount)
     {
         maxSlots = slotsCount;
         slots = new List<InventorySlots>();
 
         for (int i = 0; i < maxSlots; i++)
         {
-            slots.Add(new InventorySlots(null, 0));
+            slots.Add(new InventorySlots());
         }
     }
 
-    public bool AddItem(ItemData item, int amount = 1) //Sistema para añadir items a los slots
+     public int AddItem(BaseItemsData item, int amount = 1)
     {
-        if (item.stackable) //Si se puede stackear, varias copias se almacenan en uno
+        UpdateSpecialSlots();
+
+        int initialAmount = amount;
+
+        ItemData data = item as ItemData;
+
+        if (!item.isStackable)
         {
-            for (int i = 0; i < maxSlots; i++)
+            foreach (var slot in slots)
             {
-                if (slots[i].item == item && slots[i].quantity < item.maxStack)
+                if (slot.IsEmpty() && IsValidSlot(slot, item))
                 {
-                    int space = item.maxStack - slots[i].quantity;
-                    int toAdd = Mathf.Min(space, amount);
+                    slot.item = item;
+                    slot.instance = data != null ? new ItemInstance(data) : null;
+                    slot.quantity = 1;
 
-                    slots[i].quantity += toAdd;
-                    amount -= toAdd;
-
-                    if (amount <= 0)
-                    return true;
+                    amount--;
+                    if (amount <= 0) return initialAmount;
                 }
             }
+            return initialAmount - amount;
         }
 
-        for (int i = 0; i < maxSlots; i++)
+        foreach (var slot in slots)
         {
-            if (slots[i].IsEmpty())
+            if (slot.item == item && slot.quantity < item.maxStack)
             {
-                int toAdd = item.stackable ? Mathf.Min(item.maxStack, amount) : 1;
+                if (!IsValidSlot(slot, item)) continue;
 
-                slots[i].item = item;
-                slots[i].quantity = toAdd;
+                if (slot.allowedResourceType == Resources.Agua)
+                {
+                    if (slot.quantity >= 1) continue;
 
-                amount -= toAdd;
+                    slot.quantity = 1;
+                    amount--;
+                }
+                else
+                {
+                    int space = item.maxStack - slot.quantity;
+                    int toAdd = Mathf.Min(space, amount);
 
-                if (amount <= 0)
-                    return true;
+                    slot.quantity += toAdd;
+                    amount -= toAdd;
+                }
+
+                if (amount <= 0) return initialAmount;
             }
         }
-        return false;
+
+        foreach (var slot in slots)
+        {
+            if (slot.IsEmpty() && IsValidSlot(slot, item))
+            {
+                if (slot.allowedResourceType == Resources.Agua)
+                {
+                    slot.item = item;
+                    slot.quantity = 1;
+                    slot.instance = null;
+
+                    amount--;
+                }
+                else
+                {
+                    int toAdd = Mathf.Min(item.maxStack, amount);
+
+                    slot.item = item;
+                    slot.quantity = toAdd;
+                    slot.instance = null;
+
+                    amount -= toAdd;
+                }
+
+                if (amount <= 0) return initialAmount;
+            }
+        }
+
+        return initialAmount - amount;
     }
 
-    public void RemoveItem(int index, int amount = 1) //La logica para quitar items
+    public void ClearSlot(int index)
     {
         if (index < 0 || index >= maxSlots) return;
 
-        InventorySlots slot = slots[index];
+        slots[index] = new InventorySlots();
+    }
 
-        if (slot.IsEmpty()) return;
+    public void UpdateSpecialSlots()
+    {
+        bool hasBow = false;
+        bool hasBallista = false;
+        bool hasBucket = false;
 
-        slot.quantity -= amount;
+        int backpackSlots = 0;
 
-        if (slot.quantity <= 0)
+        foreach (var slot in slots)
         {
-            slot.item = null;
-            slot.quantity = 0;
+            if (slot.IsEmpty()) continue;
+
+            if (slot.instance != null && slot.instance.data is BackpackData backpack)
+            {
+                backpackSlots += backpack.slots;
+            }
+
+            if (slot.instance != null)
+            {
+                var id = slot.instance.data.id;
+
+                if (id == ItemID.Arco) hasBow = true;
+                if (id == ItemID.Balista) hasBallista = true;
+
+                if (id == ItemID.Cubo) hasBucket = true;
+            }
         }
+
+        int normalSlots = 5 + backpackSlots;
+        int arrowSlots = hasBow ? 30 : 0;
+        int projectileSlots = hasBallista ? 30 : 0;
+        int waterSlots = hasBucket ? backpackSlots : 0;
+
+        int totalSlots = normalSlots + arrowSlots + projectileSlots + waterSlots;
+
+        if (totalSlots == maxSlots) return;
+
+        List<InventorySlots> newSlots = new List<InventorySlots>();
+
+        for (int i = 0; i < normalSlots; i++)
+        {
+            newSlots.Add(new InventorySlots
+            {
+                slotType = SlotType.Normal
+            });
+        }
+
+        for (int i = 0; i < arrowSlots; i++)
+        {
+            newSlots.Add(new InventorySlots
+            {
+                slotType = SlotType.Flecha
+            });
+        }
+
+        for (int i = 0; i < projectileSlots; i++)
+        {
+            newSlots.Add(new InventorySlots
+            {
+                slotType = SlotType.Proyectil
+            });
+        }
+
+        for (int i = 0; i < waterSlots; i++)
+        {
+            newSlots.Add(new InventorySlots
+            {
+                slotType = SlotType.Normal,
+                allowedResourceType = Resources.Agua
+            });
+        }
+
+        foreach (var old in slots)
+        {
+            if (old.IsEmpty()) continue;
+
+            TryInsertIntoNewSlots(newSlots, old.item, old.quantity, old.instance);
+        }
+
+        slots = newSlots;
+        maxSlots = totalSlots;
+    }
+
+    public void TryInsertIntoNewSlots(List<InventorySlots> newSlots, BaseItemsData item, int amount, ItemInstance instance)
+    {
+        foreach (var slot in newSlots)
+        {
+            if (!slot.IsEmpty()) continue;
+
+            if (IsValidSlot(slot, item))
+            {
+                slot.item = item;
+                slot.quantity = amount;
+                slot.instance = instance;
+                return;
+            }
+        }
+    }
+
+    bool IsValidSlot(InventorySlots slot, BaseItemsData item)
+    {
+        if (item == null) return false;
+
+        if (slot.allowedResourceType == Resources.Agua)
+        {
+            return item.resourceType == Resources.Agua;
+        }
+
+        if (slot.slotType == SlotType.Flecha)
+        {
+            return item is ItemData d && d.actionType == ActionType.Disparar;
+        }
+
+        if (slot.slotType == SlotType.Proyectil)
+        {
+            return item is ItemData d && d.actionType == ActionType.Proyectil;
+        }
+
+        return true;
     }
 }

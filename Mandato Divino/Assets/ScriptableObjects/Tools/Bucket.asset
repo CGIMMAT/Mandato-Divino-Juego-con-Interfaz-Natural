@@ -13,8 +13,17 @@ MonoBehaviour:
   m_Name: Bucket
   m_EditorClassIdentifier: 
   itemName: Cubo
+  icon: {fileID: -1667721440, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
+  isStackable: 0
+  maxStack: 1
+  resourceType: 6
+  itemPrefab: {fileID: 5505108440830146926, guid: 91c835316566ddb41bc4c617dea9faf4, type: 3}
+  id: 3
+  actionType: 2
   productionCost:
-  - material: 2
+  - material: 3
     amount: 10
   productionTime: 1
-  slots: 50
+  isEquipable: 0
+  isEquiped: 0
+  slots: 3

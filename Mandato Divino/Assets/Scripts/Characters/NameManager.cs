@@ -2,14 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NameManager : MonoBehaviour
+public class NameManager : MonoBehaviour //Código para asignar nombres a los aldeanos.
 {
-    public static NameManager Instance;
+    public static NameManager Instance; //Se instancia por cada aldeano
 
+    //Listas con todos los nombres que pueden tener los aldeanos
     private List<string> maleNames = new List<string>();
     private List<string> femaleNames = new List<string>();
 
-    void Awake()
+    void Awake() //Al iniciar, se cargan los nombres si existe una instancia 
     {
         if (Instance == null)
             Instance = this;
@@ -22,7 +23,7 @@ public class NameManager : MonoBehaviour
         LoadNames();
     }
 
-    void LoadNames()
+    void LoadNames() //Importamos los nombres desde los correspondientes archivos de texto
     {
         TextAsset maleFile = UnityEngine.Resources.Load<TextAsset>("maleName");
         TextAsset femaleFile = UnityEngine.Resources.Load<TextAsset>("femaleName");
@@ -32,21 +33,27 @@ public class NameManager : MonoBehaviour
             maleNames = new List<string>(maleFile.text.Split('\n'));
             maleNames.RemoveAll(name => string.IsNullOrWhiteSpace(name));
         }
-        else Debug.LogWarning("male_names.txt no encontrado en Resources");
 
         if (femaleFile != null)
         {
             femaleNames = new List<string>(femaleFile.text.Split('\n'));
             femaleNames.RemoveAll(name => string.IsNullOrWhiteSpace(name));
         }
-        else Debug.LogWarning("female_names.txt no encontrado en Resources");
     }
 
-    public string GetRandomName(Gender gender)
+    public List<string> GetAllNames() //Listado de todos los nombres disponibles, que se usarán más adelante
     {
-        if (gender == Gender.Male && maleNames.Count > 0)
+        List<string> allNames = new List<string>();
+        allNames.AddRange(maleNames);
+        allNames.AddRange(femaleNames);
+        return allNames;
+    }
+
+    public string GetRandomName(Gender gender) //Ahora, en base al genero, se elige un nombre de la lista del genero correspondiente aleatoriamente
+    {
+        if (gender == Gender.Hombre && maleNames.Count > 0)
             return maleNames[Random.Range(0, maleNames.Count)];
-        if (gender == Gender.Female && femaleNames.Count > 0)
+        if (gender == Gender.Mujer && femaleNames.Count > 0)
             return femaleNames[Random.Range(0, femaleNames.Count)];
         return "Villager";
     }

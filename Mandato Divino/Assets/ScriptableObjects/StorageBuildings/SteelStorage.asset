@@ -12,17 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9cbb080eeebddd4093b58543951d571, type: 3}
   m_Name: SteelStorage
   m_EditorClassIdentifier: 
-  id: 16
+  id: 14
   buildingName: Almacen de Minerales
   lifePoints: 100
-  image: {fileID: 6613430, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
+  prefab: {fileID: 6594060230072763499, guid: 080026f2b10a2284e89563c39bff17f6, type: 3}
   productionCost:
-  - material: 3
-    amount: 40
   - material: 4
+    amount: 40
+  - material: 5
     amount: 20
   productionTime: 10
   size: {x: 1, y: 1}
   needsEmptyTile: 1
-  storedMaterial: 4
+  storedMaterial: 5
   storageCapacity: 100

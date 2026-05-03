@@ -13,10 +13,18 @@ MonoBehaviour:
   m_Name: Shovel
   m_EditorClassIdentifier: 
   itemName: Pala
+  icon: {fileID: -582460200, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
+  isStackable: 0
+  maxStack: 1
+  resourceType: 6
+  itemPrefab: {fileID: 5505108440830146926, guid: 8fd5c3afbca9e5e47810084690801fdb, type: 3}
+  id: 9
+  actionType: 6
   productionCost:
-  - material: 2
+  - material: 3
     amount: 20
   productionTime: 2
+  isEquipable: 0
+  isEquiped: 0
   durability: 50
-  use: Dig
   effectivity: 2

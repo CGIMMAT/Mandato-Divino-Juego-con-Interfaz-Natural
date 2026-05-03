@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14c866ebbc8cc2e448c0494785da7f1a, type: 3}
+  m_Name: Water
+  m_EditorClassIdentifier: 
+  itemName: Agua
+  icon: {fileID: -1277106766, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
+  isStackable: 1
+  maxStack: 10
+  resourceType: 1
+  resourceName: Agua
+  resourcePrefab: {fileID: 5093673906441415905, guid: a307be073cb00d3468a6e5b84f1117df, type: 3}
+  value: 1

@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9cbb080eeebddd4093b58543951d571, type: 3}
   m_Name: StoneStorage
   m_EditorClassIdentifier: 
-  id: 15
+  id: 13
   buildingName: Almacen de Piedra
   lifePoints: 20
-  image: {fileID: -1077279292, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
+  prefab: {fileID: 6594060230072763499, guid: 3ffdf43c07348eb46b0a5cab5315ba18, type: 3}
   productionCost:
-  - material: 2
+  - material: 3
     amount: 5
   productionTime: 2
   size: {x: 1, y: 1}
   needsEmptyTile: 1
-  storedMaterial: 3
+  storedMaterial: 4
   storageCapacity: 100

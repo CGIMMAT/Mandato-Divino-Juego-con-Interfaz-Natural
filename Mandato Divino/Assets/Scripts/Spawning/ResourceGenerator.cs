@@ -7,6 +7,8 @@ using UnityEngine.Tilemaps;
 public class PrefabsChance
 {
     public GameObject prefabs;
+    public FountainResourceData data; 
+    public TemporaryResourcesData tempData;
     public float chance;
 }
 
@@ -94,6 +96,11 @@ public class ResourceGenerator : MonoBehaviour
                 {
                     Vector3 worldPos = tilemap.GetCellCenterWorld(pos);
                     GameObject resource = Instantiate(option.prefabs, worldPos, Quaternion.identity);
+                    FountainResourceLogic logic = resource.GetComponent<FountainResourceLogic>();
+                    if (logic != null && option.data != null)
+                    {
+                        logic.Initialize(option.data);
+                    }
                     spawnedResources[pos] = resource;
                     break;
                 }
@@ -145,10 +152,20 @@ public class ResourceGenerator : MonoBehaviour
                     {
                         Vector3 worldPos = tilemap.GetCellCenterWorld(pos);
                         GameObject resource = Instantiate(option.prefabs, worldPos, Quaternion.identity);
+                        bool isTemporary = false;
+                        TemporaryResourcesLogic tempLogic = resource.GetComponent<TemporaryResourcesLogic>();
+                        if (tempLogic != null && option.tempData != null)
+                        {
+                            tempLogic.Initialize(option.tempData);
+                            isTemporary = true;
+                        }
                         spawnedResources[pos] = resource;
 
-                        float lifetime = Random.Range(destroyMin, destroyMax);
-                        StartCoroutine(destroyResources(pos, resource, lifetime));
+                        if (isTemporary)
+                        {
+                            float lifetime = Random.Range(destroyMin, destroyMax);
+                            StartCoroutine(destroyResources(pos, resource, lifetime));
+                        }
                         break;
                     }
                 }
@@ -177,6 +194,18 @@ public class ResourceGenerator : MonoBehaviour
         if (spawnedResources.ContainsKey(pos))
         {
             spawnedResources.Remove(pos);
+        }
+    }
+
+    public void RegisterResource(Vector3Int pos, GameObject obj)
+    {
+        if (spawnedResources.ContainsKey(pos))
+        {
+            spawnedResources[pos] = obj;
+        }
+        else
+        {
+            spawnedResources.Add(pos, obj);
         }
     }
 }

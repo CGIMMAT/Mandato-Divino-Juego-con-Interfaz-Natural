@@ -12,17 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9cbb080eeebddd4093b58543951d571, type: 3}
   m_Name: FoodStorage
   m_EditorClassIdentifier: 
-  id: 12
+  id: 11
   buildingName: Almacen de Comida
   lifePoints: 50
-  image: {fileID: -963548487, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
+  prefab: {fileID: 6594060230072763499, guid: bb09c080feb54834d8e0e9c96a1c46f1, type: 3}
   productionCost:
-  - material: 3
+  - material: 4
     amount: 5
-  - material: 2
+  - material: 3
     amount: 10
-  productionTime: 3
+  productionTime: 0.1
   size: {x: 1, y: 1}
   needsEmptyTile: 1
-  storedMaterial: 1
+  storedMaterial: 2
   storageCapacity: 50

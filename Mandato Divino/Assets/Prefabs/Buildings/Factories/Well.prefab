@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 7428837133074635528}
   - component: {fileID: 440386073914670009}
   - component: {fileID: 6138194880459939}
+  - component: {fileID: -3409882507082285440}
+  - component: {fileID: 7864697068500656356}
   m_Layer: 0
   m_Name: Well
   m_TagString: Untagged
@@ -74,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: -1830226001
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 328802656, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
+  m_Sprite: {fileID: -2061826212, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -130,3 +132,44 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.36, y: 0.4}
   m_EdgeRadius: 0
+--- !u!114 &-3409882507082285440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6594060230072763499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c19d882e6cf1f049a6a50fd929f14c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildingID: 0
+  buildingName: 
+  lifePoints: 0
+  maxLife: 0
+  size: {x: 0, y: 0}
+  destroyedData: {fileID: 0}
+  producedMaterial: 1
+  productionRate: 0
+  maxStorage: 0
+  currentStorage: 0
+  workersAssigned: 0
+  maxWorkers: 0
+  assignedWorkers: []
+  inventory:
+    maxSlots: 0
+    slots: []
+  needsWorker: 0
+--- !u!114 &7864697068500656356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6594060230072763499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fce5458dc8bbb2447bfc1ed845a42ee0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

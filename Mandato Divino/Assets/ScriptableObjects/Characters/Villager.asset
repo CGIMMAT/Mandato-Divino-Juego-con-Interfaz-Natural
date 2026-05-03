@@ -16,5 +16,6 @@ MonoBehaviour:
   lifePoints: 50
   inventorySlots: 5
   energyPoints: 30
+  attackDamage: 1
+  recolectDamage: 1
   prefab: {fileID: 5425953984216353650, guid: 41e2ea686dfca1043a7418e15141eefa, type: 3}
-  image: {fileID: -998283494, guid: 57217e35dbcb89840bd37f113dcc7a04, type: 3}

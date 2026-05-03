@@ -12,20 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 904ad3368ede21f448ebb112c07637e1, type: 3}
   m_Name: Well
   m_EditorClassIdentifier: 
-  id: 3
+  id: 2
   buildingName: Pozo
   lifePoints: 30
-  image: {fileID: 328802656, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
+  prefab: {fileID: 6594060230072763499, guid: a7a89860a6a51f347be16644f6258644, type: 3}
   productionCost:
-  - material: 0
+  - material: 4
     amount: 30
-  - material: 0
+  - material: 3
     amount: 5
   productionTime: 6
   size: {x: 1, y: 1}
   needsEmptyTile: 0
-  producedMaterial: 0
+  producedMaterial: 1
   productionRate: 5
-  maxStorage: 500
+  maxStorage: 50
   workBenches: 0
   needsWorker: 0

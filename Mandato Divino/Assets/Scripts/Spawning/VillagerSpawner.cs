@@ -6,22 +6,38 @@ public class VillagerSpawner : MonoBehaviour //Sistema para crear aldeanos, atnt
 {
     public VillagersData villagerData; //Los datos genericos de los aldeanos
     private static int idCounter = 0; //El contador del id, este actuara como un int y cada nuevo aldeano recibe un valor de +1
+    public List<VillagerLogic> allVillagers = new List<VillagerLogic>(); //Lista donde se almacenan los datos de todos los aldeanos
 
-    public VillagerLogic GenerateInitial(Vector3 pos)
+    public WorldResourceData foodItem; //Items iniciales para los aldeanos, comida,
+    public WorldResourceData woodItem; //Madera,
+    public WorldResourceData stoneItem; //Y piedra
+
+    public void InitialResources(VillagerLogic villager)//Función para dar a los aldeanos inciales unos recursos básicos
     {
-        return GenerateVillager(pos, Age.Adult);
+        villager.inventory.AddItem(foodItem, foodItem.maxStack); //Se les da un stack de comida, uno de madera y uno de piedra
+        villager.inventory.AddItem(woodItem, woodItem.maxStack);
+        villager.inventory.AddItem(stoneItem, stoneItem.maxStack);
     }
 
-    public VillagerLogic GenerateChild(Vector3 pos)
+    public VillagerLogic GenerateInitial(Vector3 pos) //La función para los primeros aldeanos, que siempre serán adultos
     {
-        return GenerateVillager(pos, Age.Child);
+        VillagerLogic v = GenerateVillager(pos, Age.Adulto);
+        InitialResources(v); //Se les da los recursos iniciales
+        return v;
     }
 
-    public VillagerLogic GenerateVillager(Vector3 pos, Age age)
+    public VillagerLogic GenerateChild(Vector3 pos) //La función para los demás, que siempre serán niños
+    {
+        VillagerLogic v = GenerateVillager(pos, Age.Niño);
+        return v;
+    }
+
+    public VillagerLogic GenerateVillager(Vector3 pos, Age age) //La funciñon que genera en una posición a los aldeanos
     {
         GameObject villagerGO = Instantiate(villagerData.prefab, pos, Quaternion.identity);
         VillagerLogic villager = villagerGO.GetComponent<VillagerLogic>();
         villager.Initialize(villagerData, idCounter++, age);
+        allVillagers.Add(villager); //Se añade el aldeano recien creado a la lista
         return villager;
     }
 }

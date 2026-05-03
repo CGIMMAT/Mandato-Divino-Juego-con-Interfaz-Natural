@@ -12,17 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9cbb080eeebddd4093b58543951d571, type: 3}
   m_Name: WeaponStorage
   m_EditorClassIdentifier: 
-  id: 18
+  id: 16
   buildingName: Almacen de Armas
   lifePoints: 100
-  image: {fileID: -827305244, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
+  prefab: {fileID: 6594060230072763499, guid: 22f4c7ce1a6d8dd45a00897f4cb22f48, type: 3}
   productionCost:
-  - material: 3
-    amount: 50
   - material: 4
+    amount: 50
+  - material: 5
     amount: 10
   productionTime: 10
   size: {x: 1, y: 1}
   needsEmptyTile: 1
-  storedMaterial: 10
-  storageCapacity: 30
+  storedMaterial: 7
+  storageCapacity: 20

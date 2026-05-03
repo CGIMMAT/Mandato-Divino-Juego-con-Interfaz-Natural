@@ -12,18 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 904ad3368ede21f448ebb112c07637e1, type: 3}
   m_Name: Farm
   m_EditorClassIdentifier: 
-  id: 4
+  id: 3
   buildingName: Granja
   lifePoints: 100
-  image: {fileID: 34235906, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
+  prefab: {fileID: 6594060230072763499, guid: cfd1bcf0bd95f51489bd14276f0344db, type: 3}
   productionCost:
-  - material: 2
+  - material: 3
     amount: 100
   productionTime: 8
   size: {x: 1, y: 1}
   needsEmptyTile: 0
-  producedMaterial: 1
-  productionRate: 0.5
-  maxStorage: 40
+  producedMaterial: 2
+  productionRate: 20
+  maxStorage: 50
   workBenches: 4
-  needsWorker: 0
+  needsWorker: 1

@@ -4,16 +4,16 @@ using UnityEngine;
 
 public enum Age //Las posibles edades que puede tener
 {
-    Child,
-    Teen,
-    Adult,
-    Old
+    Niño,
+    Joven,
+    Adulto,
+    Anciano
 }
 
 public enum Gender //Su genero, que determinara de quien se enamora y su sprite
 {
-    Male,
-    Female
+    Hombre,
+    Mujer
 }
 
 [System.Serializable]
@@ -30,6 +30,9 @@ public class VillagersData : ScriptableObject //El código para definir los dato
     public int lifePoints; //Su vida
     public int inventorySlots; //Los items que pueden llevar
     public int energyPoints; //La cantidad de accionesque pueden hacer antes de ir a descansar
+
+    public int attackDamage; //El daño que hacen los aldeanos al atacar
+    public int recolectDamage; //El daño que hacen a fuentes de recursos al recolectar recursos
 
     public GameObject prefab; //El prefab que se instancia
 }

@@ -13,14 +13,22 @@ MonoBehaviour:
   m_Name: stoneProjectile
   m_EditorClassIdentifier: 
   itemName: Bala de Piedra
+  icon: {fileID: -1600555915, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
+  isStackable: 0
+  maxStack: 1
+  resourceType: 6
+  itemPrefab: {fileID: 748667927088443816, guid: 09765a307a612df4daa075bdb2f769b1, type: 3}
+  id: 16
+  actionType: 10
   productionCost:
-  - material: 2
-    amount: 7
   - material: 3
+    amount: 7
+  - material: 4
     amount: 3
   productionTime: 0.8
+  isEquipable: 0
+  isEquiped: 0
   durability: 1
-  attackType: Projectile
   damage: 15
   attackRange: 0.5
   attackSpeed: 0

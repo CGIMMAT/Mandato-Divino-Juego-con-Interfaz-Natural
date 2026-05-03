@@ -2,20 +2,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum SlotType
+{
+    Normal,
+    Flecha,
+    Proyectil
+}
+
 [System.Serializable]
 public class InventorySlots //Código para definir la lógica de cada slot que puede tener el inventario de los aldeanos
 {
-    public ItemData item; //El item que se almacena en el slot
-    public int quantity; //Su cantidad, que puede variar al ser stackeable
+    public BaseItemsData item;
+    public int quantity;
 
-    public InventorySlots(ItemData item, int quantity)
+    public ItemInstance instance;
+    public SlotType slotType = SlotType.Normal;
+    public ActionType allowedActionType = ActionType.None;
+    public Resources allowedResourceType = Resources.None;
+
+    public bool IsEmpty()
     {
-        this.item = item;
-        this.quantity = quantity;
+        return item == null || quantity <= 0;
     }
 
-    public bool IsEmpty() //No hay slot si no hay item
+    public bool IsStackable()
     {
-        return item == null;
+        return item != null && item.isStackable;
+    }
+
+    public ItemData GetItemData()
+    {
+        if (instance != null) return instance.data;
+        return item as ItemData;
     }
 }

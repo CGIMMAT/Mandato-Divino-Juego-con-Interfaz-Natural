@@ -13,14 +13,22 @@ MonoBehaviour:
   m_Name: stoneSword
   m_EditorClassIdentifier: 
   itemName: Espada de Piedra
+  icon: {fileID: -2125403509, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
+  isStackable: 0
+  maxStack: 1
+  resourceType: 6
+  itemPrefab: {fileID: 748667927088443816, guid: aede80f8f79f0c84b835f986417d3376, type: 3}
+  id: 22
+  actionType: 13
   productionCost:
-  - material: 2
-    amount: 5
   - material: 3
+    amount: 5
+  - material: 4
     amount: 20
   productionTime: 2
+  isEquipable: 0
+  isEquiped: 0
   durability: 50
-  attackType: Cut
   damage: 5
   attackRange: 1.5
   attackSpeed: 4

@@ -12,21 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 904ad3368ede21f448ebb112c07637e1, type: 3}
   m_Name: Blacksmith
   m_EditorClassIdentifier: 
-  id: 9
+  id: 8
   buildingName: Herrero
   lifePoints: 150
-  image: {fileID: 1521791063, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
+  prefab: {fileID: 6594060230072763499, guid: 634c3f43535a6744e8758a913b03b808, type: 3}
   productionCost:
-  - material: 3
-    amount: 30
-  - material: 2
-    amount: 20
   - material: 4
+    amount: 30
+  - material: 3
+    amount: 20
+  - material: 5
     amount: 5
   productionTime: 12
   size: {x: 1, y: 1}
   needsEmptyTile: 1
-  producedMaterial: 7
+  producedMaterial: 0
   productionRate: 0
   maxStorage: 10
   workBenches: 4

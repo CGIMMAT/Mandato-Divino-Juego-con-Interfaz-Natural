@@ -9,14 +9,9 @@ public class InventoryUISlots : MonoBehaviour //El encargado de gestionar los sl
     public Image icon;
     public TextMeshProUGUI quantityText;
 
-    void Awake()
+    public void SetData(InventorySlots slot)
     {
-        quantityText = GetComponentInChildren<TextMeshProUGUI>();
-    }
-
-    public void SetSlots(InventorySlots slot)
-    {
-        if (slot == null || slot.item == null)
+        if (slot == null || slot.IsEmpty())
         {
             icon.enabled = false;
             quantityText.text = "";
@@ -24,15 +19,8 @@ public class InventoryUISlots : MonoBehaviour //El encargado de gestionar los sl
         }
 
         icon.enabled = true;
-        // icon.sprite = slot.item.image;
+        icon.sprite = slot.item.icon;
 
-        if (slot.item.stackable && slot.quantity > 1)
-        {
-            quantityText.text = slot.quantity.ToString();
-        }
-        else
-        {
-            quantityText.text = "";
-        }
+        quantityText.text = slot.quantity > 1 ? slot.quantity.ToString() : "";
     }
 }

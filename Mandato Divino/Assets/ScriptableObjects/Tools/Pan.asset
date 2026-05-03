@@ -13,10 +13,18 @@ MonoBehaviour:
   m_Name: Pan
   m_EditorClassIdentifier: 
   itemName: Sarten
+  icon: {fileID: -837663768, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
+  isStackable: 0
+  maxStack: 1
+  resourceType: 6
+  itemPrefab: {fileID: 5505108440830146926, guid: 738ae14ba375e874fb564b440747906b, type: 3}
+  id: 6
+  actionType: 4
   productionCost:
-  - material: 4
+  - material: 5
     amount: 10
   productionTime: 4
+  isEquipable: 0
+  isEquiped: 0
   durability: 50
-  use: Cook
   effectivity: 1

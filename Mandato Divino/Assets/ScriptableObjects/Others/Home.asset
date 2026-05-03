@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1700f33af2d280344a610fcf7a63153b, type: 3}
+  m_Name: Home
+  m_EditorClassIdentifier: 
+  id: 1
+  buildingName: Casa
+  lifePoints: 100
+  prefab: {fileID: 6594060230072763499, guid: 923704cd7233ca14e95fe8b563a35913, type: 3}
+  productionCost:
+  - material: 4
+    amount: 50
+  - material: 3
+    amount: 10
+  productionTime: 8
+  size: {x: 1, y: 1}
+  needsEmptyTile: 1

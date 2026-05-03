@@ -13,14 +13,22 @@ MonoBehaviour:
   m_Name: Ballista
   m_EditorClassIdentifier: 
   itemName: Balista
+  icon: {fileID: -317917650, guid: e174f89f73c3b034fb2c3a3b366de3ee, type: 3}
+  isStackable: 0
+  maxStack: 1
+  resourceType: 6
+  itemPrefab: {fileID: 748667927088443816, guid: 7ef6c4026a68ab64684971b63c0148db, type: 3}
+  id: 10
+  actionType: 7
   productionCost:
-  - material: 2
+  - material: 3
     amount: 50
-  - material: 4
+  - material: 5
     amount: 30
   productionTime: 12
+  isEquipable: 0
+  isEquiped: 0
   durability: 30
-  attackType: Artillery
   damage: 0
   attackRange: 10
   attackSpeed: 15
