@@ -16,6 +16,7 @@ public class MapGenerator : MonoBehaviour
     public ResourceGenerator RG; // Invoca la función de generación de recursos
     public DragCamera DC; //Invoca la función para inicializar correctamente la camara
     public VillageSpawner VS; //Invoca la función para generar los aldeanos y el pueblo inicial
+    public MonsterSpawner MS; //Invoca la funcion que genera mosntruos
 
     private void Start()
     {
@@ -28,6 +29,7 @@ public class MapGenerator : MonoBehaviour
         RG.Initialize();
         VS.spawnAltar();
         DC.StartCamera();
+        MS.Initialize();
     }
 
     void GenMap() //La función que genera el mappa en base al algoritmo
