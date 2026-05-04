@@ -115,4 +115,9 @@ public class VillagerLogic : MonoBehaviour, CombatTarget //Datos que deberá ten
             inventory.UpdateSpecialSlots();
         }
     }
+
+    public bool isDead()
+    {
+        return lifePoints <= 0;
+    }
 }

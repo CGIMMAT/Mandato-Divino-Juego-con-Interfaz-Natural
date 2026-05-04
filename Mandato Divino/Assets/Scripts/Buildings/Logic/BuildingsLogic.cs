@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BuildingsLogic : MonoBehaviour //Para que todoslos edificios inicialicen sus datos comunes en cada prefab individual
+public class BuildingsLogic : MonoBehaviour, CombatTarget //Para que todoslos edificios inicialicen sus datos comunes en cada prefab individual
 {
     public BuildingID buildingID;
     public string buildingName;
@@ -23,6 +23,21 @@ public class BuildingsLogic : MonoBehaviour //Para que todoslos edificios inicia
         originalData = data;
 
         isBuilt = true;
+    }
+
+    public void TakeDamage(int amount)
+    {
+        lifePoints -= amount;
+        if (lifePoints <= 0) DestroyBuilding();
+    }
+
+    public Transform GetTransform()
+    {
+        return transform;
+    }
+    public bool isDead()
+    {
+        return lifePoints <= 0;
     }
 
     void DestroyBuilding()
