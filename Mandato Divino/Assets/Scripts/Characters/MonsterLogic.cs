@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MonsterLogic : MonoBehaviour, CombatTarget
+public class MonsterLogic : EnemyLogic, CombatTarget
 {
     public string monsterName; //Su nombre
     public int lifePoints; //Su vida
@@ -110,17 +110,17 @@ public class MonsterLogic : MonoBehaviour, CombatTarget
         }
     }
 
-    public void TakeDamage(int amount)
+    public override void TakeDamage(int amount)
     {
         lifePoints -= amount;
     }
 
-    public Transform GetTransform()
+    public override Transform GetTransform()
     {
         return transform;
     }
 
-    public bool isDead()
+    public override bool isDead()
     {
         return lifePoints <= 0;
     }

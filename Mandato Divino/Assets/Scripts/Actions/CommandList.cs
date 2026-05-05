@@ -576,12 +576,17 @@ public class CommandList : MonoBehaviour //Aquí se almacenan todas las funcione
 
             if (col != null)
             {
-                CombatTarget target = col.GetComponent<CombatTarget>();
+                EnemyLogic enemy = col.GetComponent<EnemyLogic>();
 
-                if (target != null)
+                if (enemy != null)
                 {
-                    Coroutine routine = StartCoroutine(CombatRoutine(selectedVillager, target));
-                    selectedVillager.currentCoroutine = routine;
+                    CombatTarget target = enemy.GetComponent<CombatTarget>();
+
+                    if (target != null)
+                    {
+                        Coroutine routine = StartCoroutine(CombatRoutine(selectedVillager, target));
+                        selectedVillager.currentCoroutine = routine;
+                    }
                 }
             }
 

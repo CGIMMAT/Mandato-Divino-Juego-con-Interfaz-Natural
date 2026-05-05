@@ -20,8 +20,8 @@ public class VillagerLogic : MonoBehaviour, CombatTarget //Datos que deberá ten
     public int fatherID;
     public int motherID;
 
-    public Sprite maleSprite; //Sprite cuando es hombre
-    public Sprite femaleSprite; //Sprite cuando es mujer
+    public Sprite[] maleSprites; //Sprite cuando es hombre
+    public Sprite[] femaleSprites; //Sprite cuando es mujer
 
     private SpriteRenderer SR; //Componente para cambiar el sprite del prefab
     public InventoryLogic inventory; //El inventario personal
@@ -34,6 +34,9 @@ public class VillagerLogic : MonoBehaviour, CombatTarget //Datos que deberá ten
     public FactoriesLogic currentFactory;
     public HomeLogic currentHome;
 
+    private float ageTimer; //EL contador de tiempo que mide cuanto está vivo
+    private const float ageDuration = 4320f; //3 días medidos en segundos, el tiempo que se tarda en envejecer
+
     void Awake()
     {
         SR = GetComponent<SpriteRenderer>(); //Inizializamos el componente del sprite para poder manipularlo con el siguiente metodo
@@ -42,16 +45,22 @@ public class VillagerLogic : MonoBehaviour, CombatTarget //Datos que deberá ten
             inventory = new InventoryLogic(inventorySlots > 0 ? inventorySlots : 5);
         }
     }
+    public void Update()
+    {
+        GrowOlder();
+    }
 
     public void SpriteSelector() //Función para cambiar el sprit en base al genero. Más adelante se añadirá la función para cambar el sprite en base a la edad
     {
+        int ageIndex = (int)age;
+
         if (gender == Gender.Hombre)
         {
-            SR.sprite = maleSprite;
+            SR.sprite = maleSprites[ageIndex];
         }
-        else
+        else if (gender == Gender.Mujer)
         {
-            SR.sprite = femaleSprite;
+            SR.sprite = femaleSprites[ageIndex];
         }
     }
 
@@ -83,6 +92,7 @@ public class VillagerLogic : MonoBehaviour, CombatTarget //Datos que deberá ten
         currentHome = null;
 
         SpriteSelector();
+        StatsUpdate();
         inventory = new InventoryLogic(inventorySlots); //Inicializamos su inventario personal
     }
 
@@ -119,5 +129,34 @@ public class VillagerLogic : MonoBehaviour, CombatTarget //Datos que deberá ten
     public bool isDead()
     {
         return lifePoints <= 0;
+    }
+
+    public void GrowOlder()
+    {
+        ageTimer += Time.deltaTime;
+
+        if (ageTimer >= ageDuration)
+        {
+            ageTimer = 0f;
+
+            switch (age)
+            {
+                case Age.Niño: age = Age.Joven; canWork = (age != Age.Niño); StatsUpdate(); SpriteSelector(); break;
+                case Age.Joven: age = Age.Adulto; canWork = (age != Age.Niño); StatsUpdate(); SpriteSelector(); break;
+                case Age.Adulto: age = Age.Anciano; canWork = (age != Age.Niño); StatsUpdate(); SpriteSelector(); break;
+                case Age.Anciano: Die(); break;
+            }
+        }
+    }
+
+    public void StatsUpdate()
+    {
+        switch (age)
+        {
+            case Age.Niño: lifePoints = 10; energyPoints = 20; break;
+            case Age.Joven: lifePoints = 30; energyPoints = 40; break;
+            case Age.Adulto: lifePoints = 40; energyPoints = 30; break;
+            case Age.Anciano: lifePoints = 20; energyPoints = 20; break;
+        }
     }
 }

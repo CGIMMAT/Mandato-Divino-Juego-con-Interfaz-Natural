@@ -200,8 +200,16 @@ MonoBehaviour:
     inLove: 0
   fatherID: 0
   motherID: 0
-  maleSprite: {fileID: -998283494, guid: 57217e35dbcb89840bd37f113dcc7a04, type: 3}
-  femaleSprite: {fileID: 1167490956, guid: 57217e35dbcb89840bd37f113dcc7a04, type: 3}
+  maleSprites:
+  - {fileID: -781526276, guid: 57217e35dbcb89840bd37f113dcc7a04, type: 3}
+  - {fileID: -363133727, guid: 57217e35dbcb89840bd37f113dcc7a04, type: 3}
+  - {fileID: -998283494, guid: 57217e35dbcb89840bd37f113dcc7a04, type: 3}
+  - {fileID: 126530345, guid: 57217e35dbcb89840bd37f113dcc7a04, type: 3}
+  femaleSprites:
+  - {fileID: 2095412248, guid: 57217e35dbcb89840bd37f113dcc7a04, type: 3}
+  - {fileID: -1504145905, guid: 57217e35dbcb89840bd37f113dcc7a04, type: 3}
+  - {fileID: 1167490956, guid: 57217e35dbcb89840bd37f113dcc7a04, type: 3}
+  - {fileID: 2139070911, guid: 57217e35dbcb89840bd37f113dcc7a04, type: 3}
   inventory:
     maxSlots: 0
     slots: []
