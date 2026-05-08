@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Monster
   m_EditorClassIdentifier: 
   enemyName: Demonio
-  lifePoints: 67
-  attackDamage: 5
+  lifePoints: 15
+  attackDamage: 1
   prefab: {fileID: 2162149928618945472, guid: 48edc6682c373b64fbd1e4fa620dbf18, type: 3}
-  lifeSpan: 0
+  lifeSpan: 20

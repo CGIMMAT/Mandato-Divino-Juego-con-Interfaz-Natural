@@ -150,6 +150,7 @@ MonoBehaviour:
   maxLife: 0
   size: {x: 0, y: 0}
   destroyedData: {fileID: 0}
+  originalData: {fileID: 0}
   producedMaterial: 2
   productionRate: 0
   maxStorage: 0
@@ -174,5 +175,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   costs:
-  - resource: 0
+  - resource: 1
     amountPerHour: 10

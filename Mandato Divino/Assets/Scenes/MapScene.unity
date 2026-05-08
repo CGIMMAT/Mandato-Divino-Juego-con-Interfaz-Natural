@@ -1458,6 +1458,58 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &569673877
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 569673879}
+  - component: {fileID: 569673878}
+  m_Layer: 0
+  m_Name: DisasterManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &569673878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569673877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09596f0695b72de4b812b2ef033b6a7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disasterChance: 10
+  disasterTimer: 600
+  disasterIntesity: 1
+  firePrefab: {fileID: 383197537820986279, guid: 279647a6b9abe8b43b041ae1be69cb99, type: 3}
+  stormPrefab: {fileID: 6414230556061259451, guid: af2e8dc16bfc7a846adb09e945411f22, type: 3}
+  quakePrefab: {fileID: 1956560244384457495, guid: 9a1ef74ca86c5c14da36c1bb8cc0f36c, type: 3}
+  RG: {fileID: 776218610}
+  MG: {fileID: 776218609}
+--- !u!4 &569673879
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569673877}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 26.198915, y: 44.424232, z: -0.058631647}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &640061852
 GameObject:
   m_ObjectHideFlags: 0
@@ -1604,6 +1656,7 @@ GameObject:
   - component: {fileID: 776218609}
   - component: {fileID: 776218610}
   - component: {fileID: 776218611}
+  - component: {fileID: 776218612}
   m_Layer: 0
   m_Name: MapGen
   m_TagString: Untagged
@@ -1806,6 +1859,22 @@ MonoBehaviour:
   VIS: {fileID: 1075400280}
   startPos: {x: 0, y: 0, z: 0}
   maxTrys: 500
+--- !u!114 &776218612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776218606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 780e3f7443a02a64590fdee749a8c079, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dayTime: 1440
+  dayUpgrade: 5
+  currentLevel: 1
+  maxLevel: 10
 --- !u!1 &864746647
 GameObject:
   m_ObjectHideFlags: 0
@@ -2723,7 +2792,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7f82874b5d95fce4cbaf96752b910d4f, type: 2}
   - {fileID: 11400000, guid: c91867268d547d949a87f383b5848692, type: 2}
   - {fileID: 11400000, guid: a51aa9e1e858b124f929da127855a64b, type: 2}
-  - {fileID: 11400000, guid: e92dc904ebb0bab4abbf4dabc7509fb7, type: 2}
+  - {fileID: 11400000, guid: f63c0a2ccd7a4384c84fc8b76072d77d, type: 2}
   - {fileID: 11400000, guid: c6967236627e2d04f896fad81ed4f61d, type: 2}
   - {fileID: 11400000, guid: f87a4c3cbe2f3814d949c5eae105a6d0, type: 2}
   - {fileID: 11400000, guid: 62712bd8951defb478780b4891e97114, type: 2}
@@ -5533,16 +5602,17 @@ SceneRoots:
   m_Roots:
   - {fileID: 155221757}
   - {fileID: 337495725}
-  - {fileID: 776218608}
   - {fileID: 2000598773}
   - {fileID: 920995835}
   - {fileID: 956332122}
   - {fileID: 330859683}
   - {fileID: 1385041805}
+  - {fileID: 776218608}
   - {fileID: 1853591160}
   - {fileID: 1196115788}
   - {fileID: 1075400281}
   - {fileID: 963672218}
   - {fileID: 915059855}
-  - {fileID: 532295597}
   - {fileID: 1771478093}
+  - {fileID: 569673879}
+  - {fileID: 532295597}

@@ -40,4 +40,9 @@ public class VillagerSpawner : MonoBehaviour //Sistema para crear aldeanos, atnt
         allVillagers.Add(villager); //Se añade el aldeano recien creado a la lista
         return villager;
     }
+
+    public void RemoveVillager(VillagerLogic villager)
+    {
+        if (allVillagers.Contains(villager)) allVillagers.Remove(villager); //Metodo para eliminar de la lista de aldeanos al aldeano que ha muerto
+    }
 }

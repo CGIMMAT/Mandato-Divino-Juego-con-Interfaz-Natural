@@ -9,24 +9,38 @@ public class MonsterLogic : EnemyLogic, CombatTarget
     public int attackDamage; //El daño que hacen al atacar
     public int lifeSpan; //El tiempo que vive
 
+    private MonsterData monsterData;
+
     private Transform target; //El objetivo de sus ataques
     private Vector3 wanderTarget; //El objetivo hacia el cual se mueven
     private float wanderTimer;
     private float attackCooldown;
 
+    private float currentLifeTime;
+    private bool dead = false;
+
     public void Initialize(MonsterData data)
     {
+        monsterData = data;
         monsterName = data.enemyName;
         lifePoints = data.lifePoints;
         attackDamage = data.attackDamage;
-        lifeSpan = Random.Range(data.lifeSpan, (data.lifeSpan * 5) + 1); //Se aleatoriza la cantidad de tiempo que viven
+        lifeSpan = Random.Range(data.lifeSpan, data.lifeSpan * 3); //Se aleatoriza la cantidad de tiempo que viven
 
         SetNewTarget();
     }
 
     public void Update()
     {
-        if (isDead()) return;
+        if (dead) return;
+
+        currentLifeTime += Time.deltaTime;
+
+        if (currentLifeTime >= lifeSpan)
+        {
+            Die();
+            return;
+        }
 
         FindTarget();
 
@@ -101,6 +115,7 @@ public class MonsterLogic : EnemyLogic, CombatTarget
 
     public void AttackTarget()
     {
+        if (target == null) return;
         attackCooldown -= Time.deltaTime;
         if (attackCooldown <= 0f)
         {
@@ -113,6 +128,20 @@ public class MonsterLogic : EnemyLogic, CombatTarget
     public override void TakeDamage(int amount)
     {
         lifePoints -= amount;
+
+        if (lifePoints <= 0)
+        {
+            Die();
+        }
+    }
+
+    public void Die()
+    {
+        dead = true;
+        StopAllCoroutines();
+        MonsterSpawner spawner = FindFirstObjectByType<MonsterSpawner>();
+        if (spawner != null) spawner.RemoveMonster(gameObject);
+        Destroy(gameObject);
     }
 
     public override Transform GetTransform()
@@ -122,6 +151,13 @@ public class MonsterLogic : EnemyLogic, CombatTarget
 
     public override bool isDead()
     {
-        return lifePoints <= 0;
+        return dead;
+    }
+
+    public void ApplyDifficultyBonus(int level)
+    {
+        lifePoints += (level - 1) * 15;
+        attackDamage += (level - 1);
+        lifeSpan = Random.Range(monsterData.lifeSpan + (level - 1) * 10, (monsterData.lifeSpan + (level - 1) * 10) * 3);
     }
 }

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Villager
   m_EditorClassIdentifier: 
   characterName: Name
-  lifePoints: 50
+  lifePoints: 10
   inventorySlots: 5
-  energyPoints: 30
+  energyPoints: 20
   attackDamage: 1
   recolectDamage: 1
   prefab: {fileID: 5425953984216353650, guid: 41e2ea686dfca1043a7418e15141eefa, type: 3}

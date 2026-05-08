@@ -208,4 +208,9 @@ public class ResourceGenerator : MonoBehaviour
             spawnedResources.Add(pos, obj);
         }
     }
+
+    public Dictionary<Vector3Int, GameObject> PublicSpawnedResources()
+    {
+        return spawnedResources;
+    }
 }

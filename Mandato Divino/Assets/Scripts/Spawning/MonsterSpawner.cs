@@ -11,10 +11,10 @@ public class MonsterSpawner : MonoBehaviour //Codigo qu gestiona la aparición d
     public GameObject monsterPrefab; //Los monstruos prefabs
 
     public int maxMonsters = 5; //La cantidad máxima de mosntruos que puede haber al mismo tiempo
-    public float minSpawnTime = 20f; //Los tiempos de carga entre que aparezcan nuevos monstruos
-    public float maxSpawnTime = 60f;
+    public float minSpawnTime = 60f; //Los tiempos de carga entre que aparezcan nuevos monstruos
+    public float maxSpawnTime = 360f;
 
-    private List<GameObject> allMonsters = new List<GameObject>(); //Los monstruos activos
+    public List<GameObject> allMonsters = new List<GameObject>(); //Los monstruos activos
 
     public void Initialize()
     {
@@ -48,6 +48,7 @@ public class MonsterSpawner : MonoBehaviour //Codigo qu gestiona la aparición d
                 Vector3 worldPos = tilemap.GetCellCenterWorld(randomPos);
                 GameObject monster = Instantiate(monsterPrefab, worldPos, Quaternion.identity);
                 MonsterLogic logic = monster.GetComponent<MonsterLogic>();
+                logic.ApplyDifficultyBonus(DifficultGenerator.instance.currentLevel);
 
                 allMonsters.Add(monster); //Después de inicializar los datos del monstruo, se añden a la casilla y la lista de monstruos activos
                 break;
@@ -65,5 +66,18 @@ public class MonsterSpawner : MonoBehaviour //Codigo qu gestiona la aparición d
 
         if (RG.GetResourceAt(pos) != null) return false; //Por ultimo, se comprueba que la casilla no tiene nada, ni recursos ni edificios
         return true;
+    }
+
+    public void UpdateDifficulty(int level)
+    {
+        maxMonsters = 5 + (level - 1) * 2;
+
+        minSpawnTime = 60f - (level - 1) * 5f;
+        maxSpawnTime = 360f - (level - 1) * 30f;
+    }
+
+    public void RemoveMonster(GameObject monster)
+    {
+        if (allMonsters.Contains(monster)) allMonsters.Remove(monster);
     }
 }

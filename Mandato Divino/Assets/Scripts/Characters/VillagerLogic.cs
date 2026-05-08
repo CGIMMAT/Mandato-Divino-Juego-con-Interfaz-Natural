@@ -110,6 +110,8 @@ public class VillagerLogic : MonoBehaviour, CombatTarget //Datos que deberá ten
     {
         StopAllCoroutines();
         isBusy = false;
+        VillagerSpawner spawner = FindObjectOfType<VillagerSpawner>();
+        if (spawner != null) spawner.RemoveVillager(this);
         Destroy(gameObject);
     }
 
