@@ -19,3 +19,6 @@ MonoBehaviour:
   attackDamage: 1
   recolectDamage: 1
   prefab: {fileID: 5425953984216353650, guid: 41e2ea686dfca1043a7418e15141eefa, type: 3}
+  recolectSound: {fileID: 8300000, guid: 5bf13157b6f99374581e09e03a20f46d, type: 3}
+  combatSound: {fileID: 8300000, guid: ecebc4011da077c49b383bd2dd532395, type: 3}
+  cookSound: {fileID: 8300000, guid: b04ec1ac9b0918b49a8c7f9b1b745bf6, type: 3}

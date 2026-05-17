@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class VillagerLogic : MonoBehaviour, CombatTarget //Datos que deberá tener el prefab del aldeano cuando se genere
 {
+    private VillagersData Data;
     public string villagerName; //Su nombre
     public int id; //Su identficador
 
@@ -36,6 +37,18 @@ public class VillagerLogic : MonoBehaviour, CombatTarget //Datos que deberá ten
 
     private float ageTimer; //EL contador de tiempo que mide cuanto está vivo
     private const float ageDuration = 4320f; //3 días medidos en segundos, el tiempo que se tarda en envejecer
+
+    private AudioSource audioSource; //Componente para que se ejecuten sonidos al realizar acciones
+
+    public enum VillagerSounds
+    {
+        Silence,
+        Recolect,
+        Combat,
+        Cook
+    }
+
+    private VillagerSounds currentSound = VillagerSounds.Silence;
 
     void Awake()
     {
@@ -94,6 +107,8 @@ public class VillagerLogic : MonoBehaviour, CombatTarget //Datos que deberá ten
         SpriteSelector();
         StatsUpdate();
         inventory = new InventoryLogic(inventorySlots); //Inicializamos su inventario personal
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void TakeDamage(int amount) //metodo para que los personajes puedan recibir daño
@@ -159,6 +174,27 @@ public class VillagerLogic : MonoBehaviour, CombatTarget //Datos que deberá ten
             case Age.Joven: lifePoints = 30; energyPoints = 40; break;
             case Age.Adulto: lifePoints = 40; energyPoints = 30; break;
             case Age.Anciano: lifePoints = 20; energyPoints = 20; break;
+        }
+    }
+
+    public void PlaySound(VillagerSounds newSound)
+    {
+        if (currentSound == newSound) return;
+
+        currentSound = newSound;
+        audioSource.Stop();
+
+        switch (newSound)
+        {
+            case VillagerSounds.Recolect: audioSource.clip = Data.recolectSound; break;
+            case VillagerSounds.Combat: audioSource.clip = Data.combatSound; break;
+            case VillagerSounds.Cook: audioSource.clip = Data.cookSound; break;
+            case VillagerSounds.Silence: audioSource.clip = null; return;
+        }
+
+        if (audioSource.clip != null)
+        {
+            audioSource.Play();
         }
     }
 }

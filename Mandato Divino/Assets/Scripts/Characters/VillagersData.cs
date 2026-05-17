@@ -35,4 +35,8 @@ public class VillagersData : ScriptableObject //El código para definir los dato
     public int recolectDamage; //El daño que hacen a fuentes de recursos al recolectar recursos
 
     public GameObject prefab; //El prefab que se instancia
+
+    public AudioClip recolectSound; //Efecto desonido que contarán cuando recolecten recursos
+    public AudioClip combatSound; //Combatan
+    public AudioClip cookSound; //Y cocinen
 }

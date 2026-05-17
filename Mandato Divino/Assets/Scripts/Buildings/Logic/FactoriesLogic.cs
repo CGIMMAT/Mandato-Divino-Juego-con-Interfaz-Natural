@@ -17,6 +17,8 @@ public class FactoriesLogic : BuildingsLogic //La inicialización de los datos e
     public InventoryLogic inventory;
 
     public bool needsWorker;
+    private AudioSource workSound;
+
     public bool HasFreeWorkerSpace()
     {
         return workersAssigned < maxWorkers;
@@ -35,5 +37,34 @@ public class FactoriesLogic : BuildingsLogic //La inicialización de los datos e
 
         currentStorage = 0;
         inventory = new InventoryLogic(maxStorage);
+
+        workSound = GetComponent<AudioSource>();
+    }
+
+    private void Update()
+    {
+        HandleWorkSound();
+    }
+
+    public void HandleWorkSound()
+    {
+        if (workSound == null) return;
+
+        bool ShouldBePlaying = workersAssigned > 0;
+
+        if (ShouldBePlaying)
+        {
+            if (!workSound.isPlaying) 
+            {
+                workSound.Play();
+            }
+        }
+        else
+        {
+            if (workSound.isPlaying)
+            {
+                workSound.Pause();
+            }
+        }
     }
 }

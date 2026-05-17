@@ -31,6 +31,9 @@ public class WordRegister : MonoBehaviour //Nuevo sistema para leer comandos
     private bool waitingYes = false; //Variable para saber cuando estamos en stado de espera de un crafteo
     private bool waitingEquip = false; //Variable de control para cuando estamos esperando un equipable
 
+    [SerializeField] private AudioSource AS;
+    [SerializeField] private AudioClip RS;
+
     void Start()
     {
         InitializeSystem(); //Inizializamos el sistema de reconocimiento de palabras
@@ -275,6 +278,7 @@ public class WordRegister : MonoBehaviour //Nuevo sistema para leer comandos
                 CL.SelectVillager(recognized);
                 waitingName = false;
                 Debug.Log("Reconocido comando payo: " + recognized);
+                SoundEffect();
             }
             return;
         }
@@ -286,6 +290,7 @@ public class WordRegister : MonoBehaviour //Nuevo sistema para leer comandos
                 CL.TalkVillager(recognized);
                 waitingTargetName = false;
                 Debug.Log("Reconocido comando payo: " + recognized);
+                SoundEffect();
             }
             return;
         }
@@ -297,6 +302,7 @@ public class WordRegister : MonoBehaviour //Nuevo sistema para leer comandos
                 CL.AssignWorker(recognized);
                 waitingFactory = false;
                 Debug.Log("Reconocido comando payo: " + recognized);
+                SoundEffect();
             }
             return;
         }
@@ -308,6 +314,7 @@ public class WordRegister : MonoBehaviour //Nuevo sistema para leer comandos
                 CL.StoreItems(recognized);
                 waitingStorage = false;
                 Debug.Log("Reconocido comando payo: " + recognized);
+                SoundEffect();
             }
             return;
         }
@@ -319,6 +326,7 @@ public class WordRegister : MonoBehaviour //Nuevo sistema para leer comandos
                 CL.TakeItems(recognized);
                 waitingItem = false;
                 Debug.Log("Reconocido comando payo: " + recognized);
+                SoundEffect();
             }
             return;
         }
@@ -330,6 +338,7 @@ public class WordRegister : MonoBehaviour //Nuevo sistema para leer comandos
                 CL.SelectBuilding(recognized);
                 waitingBuilding = false;
                 Debug.Log("Reconocido comando payo: " + recognized);
+                SoundEffect();
             }
             return;
         }
@@ -342,6 +351,7 @@ public class WordRegister : MonoBehaviour //Nuevo sistema para leer comandos
                 waitingCraft = false;
                 waitingYes = true;
                 Debug.Log("Reconocido comando payo: " + recognized);
+                SoundEffect();
             }
             return;
         }
@@ -353,6 +363,7 @@ public class WordRegister : MonoBehaviour //Nuevo sistema para leer comandos
                 CL.EquipItem(recognized);
                 waitingEquip = false;
                 Debug.Log("Reconocido comando payo: " + recognized);
+                SoundEffect();
             }
             return;
         }
@@ -362,8 +373,14 @@ public class WordRegister : MonoBehaviour //Nuevo sistema para leer comandos
         {
             Actions[recognized].Invoke();
             Debug.Log("Reconocido comando payo: " + recognized);
+            SoundEffect();
         }
         return;
         //Si no está, no hace nada
+    }
+
+    public void SoundEffect()
+    {
+        AS.PlayOneShot(RS);
     }
 }

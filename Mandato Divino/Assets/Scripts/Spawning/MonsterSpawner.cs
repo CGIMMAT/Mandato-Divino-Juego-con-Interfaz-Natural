@@ -15,6 +15,7 @@ public class MonsterSpawner : MonoBehaviour //Codigo qu gestiona la aparición d
     public float maxSpawnTime = 360f;
 
     public List<GameObject> allMonsters = new List<GameObject>(); //Los monstruos activos
+    public MonsterData monsterData; //Datos para que se puedan aplicar bonuses a las stats de monstruos
 
     public void Initialize()
     {
@@ -48,6 +49,7 @@ public class MonsterSpawner : MonoBehaviour //Codigo qu gestiona la aparición d
                 Vector3 worldPos = tilemap.GetCellCenterWorld(randomPos);
                 GameObject monster = Instantiate(monsterPrefab, worldPos, Quaternion.identity);
                 MonsterLogic logic = monster.GetComponent<MonsterLogic>();
+                logic.Initialize(monsterData);
                 logic.ApplyDifficultyBonus(DifficultGenerator.instance.currentLevel);
 
                 allMonsters.Add(monster); //Después de inicializar los datos del monstruo, se añden a la casilla y la lista de monstruos activos
