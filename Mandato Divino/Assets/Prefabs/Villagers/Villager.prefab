@@ -202,15 +202,15 @@ MonoBehaviour:
   fatherID: 0
   motherID: 0
   maleSprites:
-  - {fileID: -781526276, guid: 57217e35dbcb89840bd37f113dcc7a04, type: 3}
-  - {fileID: -363133727, guid: 57217e35dbcb89840bd37f113dcc7a04, type: 3}
-  - {fileID: -998283494, guid: 57217e35dbcb89840bd37f113dcc7a04, type: 3}
-  - {fileID: 126530345, guid: 57217e35dbcb89840bd37f113dcc7a04, type: 3}
+  - {fileID: -2127882123, guid: ccb8889411b1a3f44b499904583a650b, type: 3}
+  - {fileID: 2068927915, guid: ccb8889411b1a3f44b499904583a650b, type: 3}
+  - {fileID: -1574118262, guid: ccb8889411b1a3f44b499904583a650b, type: 3}
+  - {fileID: -1395873494, guid: ccb8889411b1a3f44b499904583a650b, type: 3}
   femaleSprites:
-  - {fileID: 2095412248, guid: 57217e35dbcb89840bd37f113dcc7a04, type: 3}
-  - {fileID: -1504145905, guid: 57217e35dbcb89840bd37f113dcc7a04, type: 3}
-  - {fileID: 1167490956, guid: 57217e35dbcb89840bd37f113dcc7a04, type: 3}
-  - {fileID: 2139070911, guid: 57217e35dbcb89840bd37f113dcc7a04, type: 3}
+  - {fileID: -774396825, guid: ccb8889411b1a3f44b499904583a650b, type: 3}
+  - {fileID: -1003627939, guid: ccb8889411b1a3f44b499904583a650b, type: 3}
+  - {fileID: 340832912, guid: ccb8889411b1a3f44b499904583a650b, type: 3}
+  - {fileID: 1020766330, guid: ccb8889411b1a3f44b499904583a650b, type: 3}
   inventory:
     maxSlots: 0
     slots: []
@@ -243,7 +243,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 15
+  MaxDistance: 1.01
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0

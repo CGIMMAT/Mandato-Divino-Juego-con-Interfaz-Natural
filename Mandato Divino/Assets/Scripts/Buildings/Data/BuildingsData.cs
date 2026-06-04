@@ -12,7 +12,6 @@ public enum Resources //listados de todos los posibles recursos disponibles
     Metal,
     Herramientas, //Solo las herramientas
     Armas, //Solo las armas
-    Familia, //Recurso especial para las casas, donde una familia se puede almacenar
 }
 
 [System.Serializable]

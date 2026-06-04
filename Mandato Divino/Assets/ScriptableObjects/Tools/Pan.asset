@@ -24,7 +24,7 @@ MonoBehaviour:
   - material: 5
     amount: 10
   productionTime: 4
-  isEquipable: 0
+  isEquipable: 1
   isEquiped: 0
   durability: 50
   effectivity: 1

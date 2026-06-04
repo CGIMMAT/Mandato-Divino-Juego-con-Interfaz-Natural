@@ -19,7 +19,7 @@ public class ItemInstance //Código de parche para las instancias de los items y
         else durability = -1;
     }
 
-     public bool HasDurability() //Metodo para comprobar que la herramienta dad tiene stat de durabilidad y evitar errores, creada en específico para el cubo
+    public bool HasDurability() //Metodo para comprobar que la herramienta dad tiene stat de durabilidad y evitar errores, creada en específico para el cubo
     {
         return durability > 0;
     }

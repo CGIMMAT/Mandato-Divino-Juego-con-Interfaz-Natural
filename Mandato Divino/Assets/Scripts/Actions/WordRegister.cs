@@ -253,9 +253,13 @@ public class WordRegister : MonoBehaviour //Nuevo sistema para leer comandos
         {
             CL.Rest();
         });
-        Actions.Add("Hijos", () =>
+        Actions.Add("hijos", () =>
         {
             CL.HaveKids();
+        });
+        Actions.Add("ataca", () =>
+        {
+            CL.StartAttack();
         });
 
         foreach (string name in validNames)

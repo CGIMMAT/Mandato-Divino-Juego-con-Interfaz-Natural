@@ -26,7 +26,7 @@ MonoBehaviour:
   - material: 4
     amount: 3
   productionTime: 2
-  isEquipable: 0
+  isEquipable: 1
   isEquiped: 0
   durability: 30
   damage: 4
