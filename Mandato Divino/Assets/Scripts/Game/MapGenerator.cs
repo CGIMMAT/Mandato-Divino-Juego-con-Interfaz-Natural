@@ -74,7 +74,11 @@ public class MapGenerator : MonoBehaviour
                 Vector3Int pos = new Vector3Int(x, y, 0);
                 tilemap.SetTile(pos, tile);
 
-                //Añadi aquí sistema de generación de prefabs en tiles 
+                var composite = tilemap.GetComponent<CompositeCollider2D>();
+                if (composite != null)
+                {
+                    composite.GenerateGeometry();
+                }
             }
         }
     }

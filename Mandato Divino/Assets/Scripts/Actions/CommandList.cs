@@ -1442,25 +1442,33 @@ public class CommandList : MonoBehaviour //Aquí se almacenan todas las funcione
             range = weapon.attackRange;
         }
 
+        Rigidbody2D rb = attacker.GetComponent<Rigidbody2D>();
+
         while (target != null)
         {
             if (!attacker.isBusy) yield break;
 
-            float dist = Vector3.Distance(attacker.transform.position,target.GetTransform().position);
+            float dist = Vector3.Distance(attacker.transform.position, target.GetTransform().position);
 
             if (dist > range)
             {
-                attacker.transform.position = Vector3.MoveTowards(attacker.transform.position,target.GetTransform().position,Time.deltaTime * 2f);
+                if (rb != null)
+                {
+                    Vector3 direction = (target.GetTransform().position - attacker.transform.position).normalized;
+                    rb.velocity = new Vector2(direction.x, direction.y) * 2f;
+                }
+                yield return new WaitForFixedUpdate(); // Espera al siguiente frame de físicas
             }
             else
             {
+                if (rb != null) rb.velocity = Vector2.zero;
+
                 CombatSystem.Attack(attacker, target);
                 yield return new WaitForSeconds(attackSpeed);
             }
-
-            yield return null;
         }
 
+        if (rb != null) rb.velocity = Vector2.zero;
         attacker.isBusy = false;
     }
 }

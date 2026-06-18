@@ -35,6 +35,11 @@ public class VillagerLogic : MonoBehaviour, CombatTarget //Datos que deberá ten
     public FactoriesLogic currentFactory;
     public HomeLogic currentHome;
 
+    private Animator anim;
+    private Vector3 lastPosition;
+    private Vector2 lastValidDirection = Vector2.down; 
+    private Rigidbody2D rb;
+
     private float ageTimer; //EL contador de tiempo que mide cuanto está vivo
     private const float ageDuration = 4320f; //3 días medidos en segundos, el tiempo que se tarda en envejecer
 
@@ -53,6 +58,9 @@ public class VillagerLogic : MonoBehaviour, CombatTarget //Datos que deberá ten
     void Awake()
     {
         SR = GetComponent<SpriteRenderer>(); //Inizializamos el componente del sprite para poder manipularlo con el siguiente metodo
+        anim = GetComponent<Animator>();
+        lastPosition = transform.position;
+
         if (inventory == null)
         {
             inventory = new InventoryLogic(inventorySlots > 0 ? inventorySlots : 5);
@@ -61,6 +69,11 @@ public class VillagerLogic : MonoBehaviour, CombatTarget //Datos que deberá ten
     public void Update()
     {
         GrowOlder();
+    }
+
+    public void FixedUpdate()
+    {
+        UpdateAnimationState();
     }
 
     public void SpriteSelector() //Función para cambiar el sprit en base al genero. Más adelante se añadirá la función para cambar el sprite en base a la edad
@@ -88,6 +101,7 @@ public class VillagerLogic : MonoBehaviour, CombatTarget //Datos que deberá ten
 
         attackDamage = data.attackDamage;
         recolectDamage = data.recolectDamage;
+        rb = GetComponent<Rigidbody2D>();
 
         age = newAge;
         gender = (Gender) Random.Range(0, System.Enum.GetValues(typeof(Gender)).Length); //Se asigna aleatoriamnete el genero de personaje
@@ -107,8 +121,9 @@ public class VillagerLogic : MonoBehaviour, CombatTarget //Datos que deberá ten
         SpriteSelector();
         StatsUpdate();
         inventory = new InventoryLogic(inventorySlots); //Inicializamos su inventario personal
-
         audioSource = GetComponent<AudioSource>();
+
+        SyncAnimatorIdentity();
     }
 
     public void TakeDamage(int amount) //metodo para que los personajes puedan recibir daño
@@ -158,9 +173,9 @@ public class VillagerLogic : MonoBehaviour, CombatTarget //Datos que deberá ten
 
             switch (age)
             {
-                case Age.Niño: age = Age.Joven; canWork = (age != Age.Niño); StatsUpdate(); SpriteSelector(); break;
-                case Age.Joven: age = Age.Adulto; canWork = (age != Age.Niño); StatsUpdate(); SpriteSelector(); break;
-                case Age.Adulto: age = Age.Anciano; canWork = (age != Age.Niño); StatsUpdate(); SpriteSelector(); break;
+                case Age.Niño: age = Age.Joven; canWork = (age != Age.Niño); StatsUpdate(); SpriteSelector(); SyncAnimatorIdentity(); break;
+                case Age.Joven: age = Age.Adulto; canWork = (age != Age.Niño); StatsUpdate(); SpriteSelector(); SyncAnimatorIdentity(); break;
+                case Age.Adulto: age = Age.Anciano; canWork = (age != Age.Niño); StatsUpdate(); SpriteSelector(); SyncAnimatorIdentity(); break;
                 case Age.Anciano: Die(); break;
             }
         }
@@ -196,5 +211,73 @@ public class VillagerLogic : MonoBehaviour, CombatTarget //Datos que deberá ten
         {
             audioSource.Play();
         }
+    }
+
+    private void UpdateAnimationState()
+    {
+        if (anim == null || rb == null) return;
+
+        // Si el SpriteRenderer está apagado, forzar parada
+        if (SR != null && !SR.enabled)
+        {
+            anim.SetBool("IsMoving", false);
+            return;
+        }
+
+        Vector2 currentVelocity = rb.velocity;
+
+        // Umbral físico para detectar movimiento real
+        if (currentVelocity.sqrMagnitude > 0.005f)
+        {
+            anim.SetBool("IsMoving", true);
+            Vector2 direction = currentVelocity.normalized;
+
+            if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
+            {
+                lastValidDirection = new Vector2(direction.x > 0 ? 1f : -1f, 0f);
+            }
+            else
+            {
+                lastValidDirection = new Vector2(0f, direction.y > 0 ? 1f : -1f);
+            }
+
+            anim.SetFloat("MoveX", lastValidDirection.x);
+            anim.SetFloat("MoveY", lastValidDirection.y);
+        }
+        else
+        {
+            anim.SetBool("IsMoving", false);
+            anim.SetFloat("MoveX", lastValidDirection.x);
+            anim.SetFloat("MoveY", lastValidDirection.y);
+        }
+    }
+
+    public void SyncAnimatorIdentity()
+    {
+        if (anim == null) return;
+
+        bool hasAgeState = false;
+        bool hasGenderState = false;
+
+        foreach (AnimatorControllerParameter param in anim.parameters)
+        {
+            if (param.name == "AgeState") hasAgeState = true;
+            if (param.name == "GenderState") hasGenderState = true;
+        }
+
+        if (!hasAgeState || !hasGenderState) return;
+
+        int genderValue = (gender == Gender.Hombre) ? 0 : 1;
+        anim.SetInteger("GenderState", genderValue);
+
+        int ageValue = 0;
+        switch (age)
+        {
+            case Age.Niño: ageValue = 0; break;
+            case Age.Joven: ageValue = 1; break;
+            case Age.Adulto: ageValue = 2; break;
+            case Age.Anciano: ageValue = 3; break;
+        }
+        anim.SetInteger("AgeState", ageValue);
     }
 }

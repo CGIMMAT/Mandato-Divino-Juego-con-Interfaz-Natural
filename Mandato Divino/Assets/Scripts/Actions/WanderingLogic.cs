@@ -19,13 +19,9 @@ public class WanderingLogic : MonoBehaviour //Sistema para que los aldeanos deam
         ChooseDirection();
     }
 
-    void Update() //Nuevos movimientos
+    void Update() // Gestión de tiempos e intenciones
     {
-        if (GetComponent<VillagerLogic>().isBusy) //Si está haciendo algo se bloque su movimiento
-        {
-            rb.velocity = Vector2.zero;
-            return;
-        }
+        if (GetComponent<VillagerLogic>().isBusy) return;
 
         if (decisionTimer > 0)
         {
@@ -38,9 +34,9 @@ public class WanderingLogic : MonoBehaviour //Sistema para que los aldeanos deam
         }
     }
 
-    void FixedUpdate() //Calcula las fisicas de los movimientos en intervalos similares a Update
+    void FixedUpdate() // Aplicación de velocidad física real
     {
-        if (GetComponent<VillagerLogic>().isBusy) //Si está haciendo algo se bloque su movimiento
+        if (GetComponent<VillagerLogic>().isBusy)
         {
             rb.velocity = Vector2.zero;
             return;
