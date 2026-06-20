@@ -24,6 +24,9 @@ public class VillagerLogic : MonoBehaviour, CombatTarget //Datos que deberá ten
     public Sprite[] maleSprites; //Sprite cuando es hombre
     public Sprite[] femaleSprites; //Sprite cuando es mujer
 
+    public RuntimeAnimatorController[] maleAnims;
+    public RuntimeAnimatorController[] femaleAnims;
+
     private SpriteRenderer SR; //Componente para cambiar el sprite del prefab
     public InventoryLogic inventory; //El inventario personal
     public ItemInstance equipedItem;
@@ -35,10 +38,10 @@ public class VillagerLogic : MonoBehaviour, CombatTarget //Datos que deberá ten
     public FactoriesLogic currentFactory;
     public HomeLogic currentHome;
 
-    private Animator anim;
-    private Vector3 lastPosition;
-    private Vector2 lastValidDirection = Vector2.down; 
     private Rigidbody2D rb;
+    private Animator anim;
+    private Vector2 lastValidDirection = Vector2.down;
+    private Vector3 lastPosition;
 
     private float ageTimer; //EL contador de tiempo que mide cuanto está vivo
     private const float ageDuration = 4320f; //3 días medidos en segundos, el tiempo que se tarda en envejecer
@@ -59,6 +62,8 @@ public class VillagerLogic : MonoBehaviour, CombatTarget //Datos que deberá ten
     {
         SR = GetComponent<SpriteRenderer>(); //Inizializamos el componente del sprite para poder manipularlo con el siguiente metodo
         anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
         lastPosition = transform.position;
 
         if (inventory == null)
@@ -69,24 +74,22 @@ public class VillagerLogic : MonoBehaviour, CombatTarget //Datos que deberá ten
     public void Update()
     {
         GrowOlder();
-    }
-
-    public void FixedUpdate()
-    {
         UpdateAnimationState();
     }
 
-    public void SpriteSelector() //Función para cambiar el sprit en base al genero. Más adelante se añadirá la función para cambar el sprite en base a la edad
+    public void VisualsSelector() //Función para cambiar el sprit en base al genero. Más adelante se añadirá la función para cambar el sprite en base a la edad
     {
         int ageIndex = (int)age;
 
         if (gender == Gender.Hombre)
         {
             SR.sprite = maleSprites[ageIndex];
+            anim.runtimeAnimatorController = maleAnims[ageIndex];
         }
         else if (gender == Gender.Mujer)
         {
             SR.sprite = femaleSprites[ageIndex];
+            anim.runtimeAnimatorController = femaleAnims[ageIndex];
         }
     }
 
@@ -118,12 +121,10 @@ public class VillagerLogic : MonoBehaviour, CombatTarget //Datos que deberá ten
         motherID = 0;
         currentHome = null;
 
-        SpriteSelector();
+        VisualsSelector();
         StatsUpdate();
         inventory = new InventoryLogic(inventorySlots); //Inicializamos su inventario personal
         audioSource = GetComponent<AudioSource>();
-
-        SyncAnimatorIdentity();
     }
 
     public void TakeDamage(int amount) //metodo para que los personajes puedan recibir daño
@@ -173,9 +174,9 @@ public class VillagerLogic : MonoBehaviour, CombatTarget //Datos que deberá ten
 
             switch (age)
             {
-                case Age.Niño: age = Age.Joven; canWork = (age != Age.Niño); StatsUpdate(); SpriteSelector(); SyncAnimatorIdentity(); break;
-                case Age.Joven: age = Age.Adulto; canWork = (age != Age.Niño); StatsUpdate(); SpriteSelector(); SyncAnimatorIdentity(); break;
-                case Age.Adulto: age = Age.Anciano; canWork = (age != Age.Niño); StatsUpdate(); SpriteSelector(); SyncAnimatorIdentity(); break;
+                case Age.Niño: age = Age.Joven; canWork = (age != Age.Niño); StatsUpdate(); VisualsSelector(); break;
+                case Age.Joven: age = Age.Adulto; canWork = (age != Age.Niño); StatsUpdate(); VisualsSelector(); break;
+                case Age.Adulto: age = Age.Anciano; canWork = (age != Age.Niño); StatsUpdate(); VisualsSelector(); break;
                 case Age.Anciano: Die(); break;
             }
         }
@@ -215,22 +216,46 @@ public class VillagerLogic : MonoBehaviour, CombatTarget //Datos que deberá ten
 
     private void UpdateAnimationState()
     {
-        if (anim == null || rb == null) return;
+        if (anim == null || anim.runtimeAnimatorController == null) return;
 
-        // Si el SpriteRenderer está apagado, forzar parada
         if (SR != null && !SR.enabled)
         {
             anim.SetBool("IsMoving", false);
             return;
         }
 
-        Vector2 currentVelocity = rb.velocity;
+        bool moving = false;
+        Vector2 direction = Vector2.zero;
 
-        // Umbral físico para detectar movimiento real
-        if (currentVelocity.sqrMagnitude > 0.005f)
+        if (!isBusy)
+        {
+            float rbSpeed = (rb != null) ? rb.velocity.sqrMagnitude : 0f;
+
+            if (rbSpeed > 0.0001f && rb != null)
+            {
+                moving = true;
+                direction = rb.velocity.normalized;
+            }
+            
+            lastPosition = transform.position;
+        }
+        else
+        {
+            Vector3 displacement = transform.position - lastPosition;
+            lastPosition = transform.position;
+
+            float calculatedSpeed = displacement.sqrMagnitude / Time.deltaTime;
+
+            if (calculatedSpeed > 0.001f)
+            {
+                moving = true;
+                direction = ((Vector2)displacement).normalized;
+            }
+        }
+
+        if (moving)
         {
             anim.SetBool("IsMoving", true);
-            Vector2 direction = currentVelocity.normalized;
 
             if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
             {
@@ -240,44 +265,13 @@ public class VillagerLogic : MonoBehaviour, CombatTarget //Datos que deberá ten
             {
                 lastValidDirection = new Vector2(0f, direction.y > 0 ? 1f : -1f);
             }
-
-            anim.SetFloat("MoveX", lastValidDirection.x);
-            anim.SetFloat("MoveY", lastValidDirection.y);
         }
         else
         {
             anim.SetBool("IsMoving", false);
-            anim.SetFloat("MoveX", lastValidDirection.x);
-            anim.SetFloat("MoveY", lastValidDirection.y);
-        }
-    }
-
-    public void SyncAnimatorIdentity()
-    {
-        if (anim == null) return;
-
-        bool hasAgeState = false;
-        bool hasGenderState = false;
-
-        foreach (AnimatorControllerParameter param in anim.parameters)
-        {
-            if (param.name == "AgeState") hasAgeState = true;
-            if (param.name == "GenderState") hasGenderState = true;
         }
 
-        if (!hasAgeState || !hasGenderState) return;
-
-        int genderValue = (gender == Gender.Hombre) ? 0 : 1;
-        anim.SetInteger("GenderState", genderValue);
-
-        int ageValue = 0;
-        switch (age)
-        {
-            case Age.Niño: ageValue = 0; break;
-            case Age.Joven: ageValue = 1; break;
-            case Age.Adulto: ageValue = 2; break;
-            case Age.Anciano: ageValue = 3; break;
-        }
-        anim.SetInteger("AgeState", ageValue);
+        anim.SetFloat("MoveX", lastValidDirection.x);
+        anim.SetFloat("MoveY", lastValidDirection.y);
     }
 }

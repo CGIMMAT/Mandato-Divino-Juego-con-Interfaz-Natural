@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: VillagerWalkOM
+  m_Controller: {fileID: 9100000, guid: dae8eaa0237311446883e43ee2dd7025, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 9a1dd0bf4e37b654ebfb2694cd96bbb1, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 8093f80ed851f5a45a1682b3a1f42a62, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: cc40391e85fb75a408250364223b6ada, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 463707c6b60925b40b05dafea028e107, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: bad4d0391c3bbdb4dab04e4e03a9b5a6, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 8e8a7ed0f382ee44ba3eb2d1b1dbc753, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: ae067960785c7264d953d7a68302364c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a7b8920a787d7a1438aa9ce0d119104b, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: b7f96142a71096f4da830e4c4d674a09, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a3095610b4a639e4596f2d2e97a9304e, type: 2}

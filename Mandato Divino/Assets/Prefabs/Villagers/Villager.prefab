@@ -212,6 +212,16 @@ MonoBehaviour:
   - {fileID: -1003627939, guid: ccb8889411b1a3f44b499904583a650b, type: 3}
   - {fileID: 340832912, guid: ccb8889411b1a3f44b499904583a650b, type: 3}
   - {fileID: 1020766330, guid: ccb8889411b1a3f44b499904583a650b, type: 3}
+  maleAnims:
+  - {fileID: 9100000, guid: dae8eaa0237311446883e43ee2dd7025, type: 2}
+  - {fileID: 22100000, guid: ce59f53ed85e79049af11dea32ab691e, type: 2}
+  - {fileID: 22100000, guid: 1c0ba40d0b77a9f4e910dc12bf50f947, type: 2}
+  - {fileID: 22100000, guid: 4bbc7a6882627454ab548e4534be9254, type: 2}
+  femaleAnims:
+  - {fileID: 22100000, guid: 2bd918803c0039444a3c2d3410dc357b, type: 2}
+  - {fileID: 22100000, guid: 069552fb989d9ef41a94837682cea665, type: 2}
+  - {fileID: 22100000, guid: b2cfa61e236df4a4aab52fe04528e0db, type: 2}
+  - {fileID: 22100000, guid: 683950fad7385d04cbfb58ecc019a16f, type: 2}
   inventory:
     maxSlots: 0
     slots: []
